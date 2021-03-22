@@ -152,6 +152,21 @@ var makeChart9 = function() {
                     .style("stroke", "#E5E5E5")
                     .style("stroke-width", "1.5")
 
+        //Add invisible bg rects
+        var bgRects = chart.append("g")
+          .attr("class", "bgRects")
+
+        bgRects.selectAll("rect")
+          .data(data)
+          .enter()
+          .append("rect")
+            .attr("class", d => d.index)
+            .attr("x", 0)
+            .attr("y", (d, i) => yScale(i) + barYStart)
+            .attr("width", chartWidth)
+            .attr("height", yScale.bandwidth() * 2)
+            .attr("opacity", 0)
+
         //add header lines
         var headerLines = chart.append("g")
                     .attr("class", "headerLines")
@@ -188,6 +203,23 @@ var makeChart9 = function() {
             .attr("y", 20)
             .text("mestská časť")
                 .style("fill", "#808285")
+
+        //Add interactivity
+        bgRects.selectAll("rect").on("mouseover", function(event, d) {
+
+          let currentIndex = d.index
+          
+          map.selectAll("path." + currentIndex)
+            .attr("fill", "#E04E50")
+
+        }).on("mouseout", function(event, d){
+
+          let currentIndex = d.index;
+          let currentIncome = d.income;
+
+          map.selectAll("path." + currentIndex)
+            .attr("fill", colorScale(currentIncome));
+        })
 
     }
 

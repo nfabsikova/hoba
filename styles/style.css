@@ -41,15 +41,8 @@ h3 {
     font-family: 'tg_praktikalmedium';
     font-weight: normal;
     color: #1A135C;
-    margin-bottom: 28px;
-}
-
-.baLabel {
-    fill: #231A57;
-}
-
-.skLabel {
-    fill: #E04E50;
+    margin-bottom: 80px;
+    width: 500px;
 }
 
 .footnote {
@@ -76,13 +69,6 @@ h3 {
     stroke-width: 2.5;
 }
 
-.ba {
-    stroke: #231A57;
-}
-
-.sk {
-    stroke: #E04E50;
-}
 
 hr {
     border: none;
@@ -126,7 +112,7 @@ hr {
 #tooltip6 p {
     margin: 0;
     color: #afafae;
-    font-family: 'Poppins', 'sans-serif';
+    font-family: ff-real-text-pro, sans-serif;
     font-size: 12px;
     line-height: 20px;
 }

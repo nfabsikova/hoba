@@ -4,7 +4,7 @@ var makeChart1 = function() {
     //Width and Height
     var w = 800;
     var h = 400;
-    var margin = {top: 80, right: 0, bottom: 40, left: 0}
+    var margin = {top: 35, right: 0, bottom: 40, left: 0}
 
     //Colors
     let colors = ["#231A57", "#E04E50"];
@@ -132,7 +132,7 @@ var makeChart1 = function() {
               chart.append("rect")
                 .attr("class", "temp")
                 .attr("x", xScale(23) - 10)
-                .attr("y", 50)
+                .attr("y", margin.top - 30)
                 .attr("width", 70)
                 .attr("height", 25)
                 .attr("fill", "white")
@@ -179,7 +179,7 @@ var makeChart1 = function() {
           //Add axes
           chart.append("g")
               .attr("class", "xAxis")
-              .attr("transform", "translate (0, " + 80 + ")")
+              .attr("transform", "translate (0, " + margin.top + ")")
               .call(xAxis)
               .selectAll("text")
               .attr("transform", "translate (-10, 0)")

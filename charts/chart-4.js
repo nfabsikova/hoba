@@ -75,7 +75,7 @@ var makeChart4 = function() {
                     .append("xhtml:body")
                         .attr("class", "headerLabel")
                         .style("font-size", function(d,i) {return (currentCol == 0 ? "18px" : "12px")})
-                        .style("font-family", "faktummedium")
+                        .style("font-family", "ff-real-text-pro, sans-serif")
                         .style("color", "#7E7E7D")
                         .style("line-height", "1.2")
                         .style("text-anchor", "start")
@@ -218,7 +218,6 @@ var makeChart4 = function() {
                         .text(currentArea)
                         .style("fill", colors[3])
                         .style("font-size", "12px")
-                        .style("font-weight", 600)
 
                     //Add background rect
                     barChart.append("rect")
@@ -247,10 +246,10 @@ var makeChart4 = function() {
                         .datum(d.filter(d => d.year == 2019))
                         .attr("x", d => colStart[1] + 5 + xScaleRect(d[0].share))
                         .attr("y", 35)
+                        .attr("class", "numbers")
                         .text(d => commaFormat(d[0].share) + "%")
                         .style("fill", colors[3])
                         .style("font-size", "12px")
-                        .style("font-weight", 600)
 
                     //Add horizontal line
                     svg.append("line")
@@ -264,7 +263,7 @@ var makeChart4 = function() {
                     //Add (initially hidden) year label to Bratislava svg
                     if (currentArea == "Bratislava") {
                         lineChart.append("text")
-                            .attr("class", "yearLabel")
+                            .attr("class", "yearLabel numbers")
                             .attr("x", xScale(2019))
                             .attr("y", 11)
                             .text("2010")
@@ -272,7 +271,6 @@ var makeChart4 = function() {
                             .style("fill", colors[3])
                             .style("text-align", "center")
                             .style("font-size", "14px")
-                            .style("font-weight", 600)
                     } 
 
                     //Add two areas - one static, one dynamic
@@ -321,23 +319,22 @@ var makeChart4 = function() {
                     //Add line chart labels
                     lineChart.append("text")
                         .datum(d.filter(d => d.year == 1996))
+                        .attr("class", "numbers")
                         .attr("x", colStart[2] - 5)
                         .attr("y", d => yScale(d[0].share) + 7)
                         .text(d => commaFormat(d[0].share))
                         .style("fill", colors[3])
                         .style("font-size", "12px")
-                        .style("font-weight", 600)
                         .style("text-anchor", "end")
 
                     lineChart.append("text")
                         .datum(d)
-                        .attr("class", "textDynamic")
+                        .attr("class", "textDynamic numbers")
                         .attr("x", colStart[2] + 107)
                         .attr("y", d => yScale(d[23].share) + 7)
                         .text(d => commaFormat(d[23].share) + "%")
                         .style("fill", colors[3])
                         .style("font-size", "12px")
-                        .style("font-weight", 600)
 
                     //Add rects for interaction
                     lineChart.append("rect")

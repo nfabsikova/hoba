@@ -395,7 +395,7 @@ var makeChart4 = function() {
 
                 chart.selectAll("svg").selectAll(".rectInteract").on("mousemove", function(event, d) {
 
-                     // recover coordinate we need
+                     // recover coordinates we need
                     currentYear = Math.round(xScale.invert(d3.pointer(event)[0]))
                     var i = bisect(d, currentYear)
 

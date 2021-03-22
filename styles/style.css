@@ -1,10 +1,10 @@
 /* font */
 @font-face {
-    font-family: 'faktummedium';
-    src: url('rene_bieder_-_faktum_medium-webfont.woff2') format('woff2'),
-         url('rene_bieder_-_faktum_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'tg_praktikalmedium';
+  src: url('tegami_type_-_tg_praktikal_medium-webfont.woff2') format('woff2'),
+       url('tegami_type_-_tg_praktikal_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
@@ -15,24 +15,32 @@ body {
 
 /* text formatting */
 text {
-    font-family: 'faktummedium';
-    font-weight: 400;
+    font-family: ff-real-text-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
     fill: #afafae;
 }
 
+.numbers {
+  font-family: ff-real-headline-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  fill: #808285;
+}
+
 h2 {
-    font-family: 'faktummedium';
-    font-weight: 800;
-    color: #afafae;
+    font-family: 'tg_praktikalmedium';
+    font-weight: normal;
+    color: #1A135C;
     margin-bottom: 30px;
 }
 
 
 h3 {
-    font-family: 'faktummedium';
-    font-weight: 500;
-    color: #afafae;
+    font-family: 'tg_praktikalmedium';
+    font-weight: normal;
+    color: #1A135C;
     margin-bottom: 28px;
 }
 
@@ -45,13 +53,13 @@ h3 {
 }
 
 .footnote {
-    color: #afafae;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
+    color: #808285;
+    font-weight: normal;
+    font-family: ff-real-text-pro, sans-serif;
     font-size: 12px;
     padding-top: 0;
-    margin: 0px 50px 40px auto;
-    text-align: right;
+    margin: 0px 50px 60px auto;
+    text-align: left;
 }
 
 /* axes formatting */
@@ -78,12 +86,21 @@ h3 {
 
 hr {
     border: none;
-    height: 1px;
+    height: 1.2px;
     /* Set the hr color */
-    color: #afafae; /* old IE */
-    background-color: #afafae; /* Modern Browsers */
+    color: #808285; /* old IE */
+    background-color: #808285; /* Modern Browsers */
     margin-bottom: 10px;
 }
+
+.headline {
+  max-width: 500px;
+  height: 1.6px;
+  margin: 0px;
+  color: #1A135C; /* old IE */
+  background-color: #1A135C;
+}
+
 /* html tooltip formatting*/
 #tooltip3,
 #tooltip6 {

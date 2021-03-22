@@ -1,0 +1,433 @@
+index,area,year,share
+i0,Bratislava,1996,7.1
+i0,Bratislava,1997,7.27
+i0,Bratislava,1998,7.39
+i0,Bratislava,1999,7.47
+i0,Bratislava,2000,7.55
+i0,Bratislava,2001,7.59
+i0,Bratislava,2002,7.67
+i0,Bratislava,2003,7.71
+i0,Bratislava,2004,7.78
+i0,Bratislava,2005,7.85
+i0,Bratislava,2006,7.95
+i0,Bratislava,2007,8.04
+i0,Bratislava,2008,8.14
+i0,Bratislava,2009,8.26
+i0,Bratislava,2010,8.42
+i0,Bratislava,2011,9.05
+i0,Bratislava,2012,9.26
+i0,Bratislava,2013,9.51
+i0,Bratislava,2014,9.76
+i0,Bratislava,2015,10.02
+i0,Bratislava,2016,10.33
+i0,Bratislava,2017,10.65
+i0,Bratislava,2018,10.93
+i0,Bratislava,2019,11.19
+i529419,Lamač,1996,7.85
+i529419,Lamač,1997,8.24
+i529419,Lamač,1998,8.37
+i529419,Lamač,1999,8.44
+i529419,Lamač,2000,8.51
+i529419,Lamač,2001,9.87
+i529419,Lamač,2002,10.03
+i529419,Lamač,2003,9.97
+i529419,Lamač,2004,10.18
+i529419,Lamač,2005,10.39
+i529419,Lamač,2006,10.52
+i529419,Lamač,2007,10.68
+i529419,Lamač,2008,10.89
+i529419,Lamač,2009,11.04
+i529419,Lamač,2010,11.17
+i529419,Lamač,2011,12.27
+i529419,Lamač,2012,12.85
+i529419,Lamač,2013,13.85
+i529419,Lamač,2014,14.74
+i529419,Lamač,2015,15.62
+i529419,Lamač,2016,16.37
+i529419,Lamač,2017,16.82
+i529419,Lamač,2018,17.12
+i529419,Lamač,2019,17.3
+i529389,Dúbravka,1996,5.84
+i529389,Dúbravka,1997,6
+i529389,Dúbravka,1998,6.17
+i529389,Dúbravka,1999,6.39
+i529389,Dúbravka,2000,6.54
+i529389,Dúbravka,2001,7.01
+i529389,Dúbravka,2002,7.17
+i529389,Dúbravka,2003,7.33
+i529389,Dúbravka,2004,7.51
+i529389,Dúbravka,2005,7.78
+i529389,Dúbravka,2006,8.13
+i529389,Dúbravka,2007,8.5
+i529389,Dúbravka,2008,8.85
+i529389,Dúbravka,2009,9.33
+i529389,Dúbravka,2010,9.8
+i529389,Dúbravka,2011,10.99
+i529389,Dúbravka,2012,11.67
+i529389,Dúbravka,2013,12.2
+i529389,Dúbravka,2014,12.71
+i529389,Dúbravka,2015,13.21
+i529389,Dúbravka,2016,13.7
+i529389,Dúbravka,2017,14.06
+i529389,Dúbravka,2018,14.28
+i529389,Dúbravka,2019,14.38
+i529320,Ružinov,1996,10.84
+i529320,Ružinov,1997,11.14
+i529320,Ružinov,1998,11.4
+i529320,Ružinov,1999,11.6
+i529320,Ružinov,2000,11.81
+i529320,Ružinov,2001,12.22
+i529320,Ružinov,2002,12.41
+i529320,Ružinov,2003,12.53
+i529320,Ružinov,2004,12.69
+i529320,Ružinov,2005,12.91
+i529320,Ružinov,2006,13.1
+i529320,Ružinov,2007,13.13
+i529320,Ružinov,2008,13.18
+i529320,Ružinov,2009,13.25
+i529320,Ružinov,2010,13.27
+i529320,Ružinov,2011,14.01
+i529320,Ružinov,2012,13.82
+i529320,Ružinov,2013,13.66
+i529320,Ružinov,2014,13.49
+i529320,Ružinov,2015,13.32
+i529320,Ružinov,2016,13.19
+i529320,Ružinov,2017,13.07
+i529320,Ružinov,2018,12.95
+i529320,Ružinov,2019,12.87
+i528595,Staré Mesto,1996,13.99
+i528595,Staré Mesto,1997,14.01
+i528595,Staré Mesto,1998,13.97
+i528595,Staré Mesto,1999,13.83
+i528595,Staré Mesto,2000,13.73
+i528595,Staré Mesto,2001,13.08
+i528595,Staré Mesto,2002,12.9
+i528595,Staré Mesto,2003,12.71
+i528595,Staré Mesto,2004,12.55
+i528595,Staré Mesto,2005,12.42
+i528595,Staré Mesto,2006,12.33
+i528595,Staré Mesto,2007,12.19
+i528595,Staré Mesto,2008,12.12
+i528595,Staré Mesto,2009,12.08
+i528595,Staré Mesto,2010,12.06
+i528595,Staré Mesto,2011,12.61
+i528595,Staré Mesto,2012,12.61
+i528595,Staré Mesto,2013,12.66
+i528595,Staré Mesto,2014,12.72
+i528595,Staré Mesto,2015,12.71
+i528595,Staré Mesto,2016,12.68
+i528595,Staré Mesto,2017,12.67
+i528595,Staré Mesto,2018,12.7
+i528595,Staré Mesto,2019,12.69
+i529311,Podunajské Biskupice,1996,4.74
+i529311,Podunajské Biskupice,1997,4.99
+i529311,Podunajské Biskupice,1998,5.06
+i529311,Podunajské Biskupice,1999,5.08
+i529311,Podunajské Biskupice,2000,5.16
+i529311,Podunajské Biskupice,2001,4.98
+i529311,Podunajské Biskupice,2002,5.09
+i529311,Podunajské Biskupice,2003,5.18
+i529311,Podunajské Biskupice,2004,5.24
+i529311,Podunajské Biskupice,2005,5.42
+i529311,Podunajské Biskupice,2006,5.64
+i529311,Podunajské Biskupice,2007,5.82
+i529311,Podunajské Biskupice,2008,6.11
+i529311,Podunajské Biskupice,2009,6.38
+i529311,Podunajské Biskupice,2010,6.68
+i529311,Podunajské Biskupice,2011,7.47
+i529311,Podunajské Biskupice,2012,7.93
+i529311,Podunajské Biskupice,2013,8.44
+i529311,Podunajské Biskupice,2014,8.95
+i529311,Podunajské Biskupice,2015,9.48
+i529311,Podunajské Biskupice,2016,10.15
+i529311,Podunajské Biskupice,2017,10.81
+i529311,Podunajské Biskupice,2018,11.3
+i529311,Podunajské Biskupice,2019,11.68
+i529354,Rača,1996,8.54
+i529354,Rača,1997,8.98
+i529354,Rača,1998,9.24
+i529354,Rača,1999,9.54
+i529354,Rača,2000,9.74
+i529354,Rača,2001,9.44
+i529354,Rača,2002,9.64
+i529354,Rača,2003,9.74
+i529354,Rača,2004,9.83
+i529354,Rača,2005,9.88
+i529354,Rača,2006,10.03
+i529354,Rača,2007,10.22
+i529354,Rača,2008,10.26
+i529354,Rača,2009,10.4
+i529354,Rača,2010,10.53
+i529354,Rača,2011,11.07
+i529354,Rača,2012,11.29
+i529354,Rača,2013,11.53
+i529354,Rača,2014,11.63
+i529354,Rača,2015,11.67
+i529354,Rača,2016,11.73
+i529354,Rača,2017,11.73
+i529354,Rača,2018,11.56
+i529354,Rača,2019,11.45
+i529346,Nové Mesto,1996,12.68
+i529346,Nové Mesto,1997,12.93
+i529346,Nové Mesto,1998,13.14
+i529346,Nové Mesto,1999,13.26
+i529346,Nové Mesto,2000,13.34
+i529346,Nové Mesto,2001,13.4
+i529346,Nové Mesto,2002,13.4
+i529346,Nové Mesto,2003,13.27
+i529346,Nové Mesto,2004,13.17
+i529346,Nové Mesto,2005,12.97
+i529346,Nové Mesto,2006,12.78
+i529346,Nové Mesto,2007,12.51
+i529346,Nové Mesto,2008,12.24
+i529346,Nové Mesto,2009,11.99
+i529346,Nové Mesto,2010,11.79
+i529346,Nové Mesto,2011,12.43
+i529346,Nové Mesto,2012,12.28
+i529346,Nové Mesto,2013,12.17
+i529346,Nové Mesto,2014,12.06
+i529346,Nové Mesto,2015,11.96
+i529346,Nové Mesto,2016,11.83
+i529346,Nové Mesto,2017,11.69
+i529346,Nové Mesto,2018,11.56
+i529346,Nové Mesto,2019,11.44
+i529338,Vrakuňa,1996,3.39
+i529338,Vrakuňa,1997,3.54
+i529338,Vrakuňa,1998,3.66
+i529338,Vrakuňa,1999,3.64
+i529338,Vrakuňa,2000,3.74
+i529338,Vrakuňa,2001,3.41
+i529338,Vrakuňa,2002,3.5
+i529338,Vrakuňa,2003,3.57
+i529338,Vrakuňa,2004,3.69
+i529338,Vrakuňa,2005,3.8
+i529338,Vrakuňa,2006,3.99
+i529338,Vrakuňa,2007,4.18
+i529338,Vrakuňa,2008,4.45
+i529338,Vrakuňa,2009,4.71
+i529338,Vrakuňa,2010,4.98
+i529338,Vrakuňa,2011,5.39
+i529338,Vrakuňa,2012,5.86
+i529338,Vrakuňa,2013,6.43
+i529338,Vrakuňa,2014,6.97
+i529338,Vrakuňa,2015,7.54
+i529338,Vrakuňa,2016,8.17
+i529338,Vrakuňa,2017,8.8
+i529338,Vrakuňa,2018,9.4
+i529338,Vrakuňa,2019,9.93
+i529460,Petržalka,1996,2.53
+i529460,Petržalka,1997,2.62
+i529460,Petržalka,1998,2.75
+i529460,Petržalka,1999,2.82
+i529460,Petržalka,2000,2.89
+i529460,Petržalka,2001,2.92
+i529460,Petržalka,2002,2.98
+i529460,Petržalka,2003,3.04
+i529460,Petržalka,2004,3.1
+i529460,Petržalka,2005,3.18
+i529460,Petržalka,2006,3.27
+i529460,Petržalka,2007,3.38
+i529460,Petržalka,2008,3.52
+i529460,Petržalka,2009,3.7
+i529460,Petržalka,2010,3.89
+i529460,Petržalka,2011,4.39
+i529460,Petržalka,2012,4.76
+i529460,Petržalka,2013,5.24
+i529460,Petržalka,2014,5.79
+i529460,Petržalka,2015,6.42
+i529460,Petržalka,2016,7.19
+i529460,Petržalka,2017,8.08
+i529460,Petržalka,2018,8.95
+i529460,Petržalka,2019,9.8
+i529397,Karlova Ves,1996,4.79
+i529397,Karlova Ves,1997,4.92
+i529397,Karlova Ves,1998,5.02
+i529397,Karlova Ves,1999,5.14
+i529397,Karlova Ves,2000,5.31
+i529397,Karlova Ves,2001,5.12
+i529397,Karlova Ves,2002,5.32
+i529397,Karlova Ves,2003,5.56
+i529397,Karlova Ves,2004,5.79
+i529397,Karlova Ves,2005,5.97
+i529397,Karlova Ves,2006,6.22
+i529397,Karlova Ves,2007,6.49
+i529397,Karlova Ves,2008,6.8
+i529397,Karlova Ves,2009,7.06
+i529397,Karlova Ves,2010,7.32
+i529397,Karlova Ves,2011,8.09
+i529397,Karlova Ves,2012,8.3
+i529397,Karlova Ves,2013,8.54
+i529397,Karlova Ves,2014,8.76
+i529397,Karlova Ves,2015,8.96
+i529397,Karlova Ves,2016,9.19
+i529397,Karlova Ves,2017,9.39
+i529397,Karlova Ves,2018,9.55
+i529397,Karlova Ves,2019,9.73
+i529362,Vajnory,1996,9.24
+i529362,Vajnory,1997,9.4
+i529362,Vajnory,1998,9.05
+i529362,Vajnory,1999,9.09
+i529362,Vajnory,2000,8.73
+i529362,Vajnory,2001,7.56
+i529362,Vajnory,2002,7.62
+i529362,Vajnory,2003,7.46
+i529362,Vajnory,2004,7.45
+i529362,Vajnory,2005,7.44
+i529362,Vajnory,2006,7.57
+i529362,Vajnory,2007,7.45
+i529362,Vajnory,2008,7.01
+i529362,Vajnory,2009,6.66
+i529362,Vajnory,2010,6.63
+i529362,Vajnory,2011,6.84
+i529362,Vajnory,2012,6.97
+i529362,Vajnory,2013,7.32
+i529362,Vajnory,2014,7.5
+i529362,Vajnory,2015,7.69
+i529362,Vajnory,2016,8.04
+i529362,Vajnory,2017,8.42
+i529362,Vajnory,2018,8.74
+i529362,Vajnory,2019,9.01
+i529401,Devín,1996,11.8
+i529401,Devín,1997,11.84
+i529401,Devín,1998,12.08
+i529401,Devín,1999,12.17
+i529401,Devín,2000,11.77
+i529401,Devín,2001,9.93
+i529401,Devín,2002,10.14
+i529401,Devín,2003,8.52
+i529401,Devín,2004,9
+i529401,Devín,2005,8.98
+i529401,Devín,2006,8.67
+i529401,Devín,2007,8.17
+i529401,Devín,2008,7.92
+i529401,Devín,2009,7.86
+i529401,Devín,2010,8.09
+i529401,Devín,2011,8.5
+i529401,Devín,2012,8.48
+i529401,Devín,2013,8.73
+i529401,Devín,2014,8.73
+i529401,Devín,2015,8.52
+i529401,Devín,2016,8.29
+i529401,Devín,2017,7.81
+i529401,Devín,2018,7.72
+i529401,Devín,2019,7.99
+i529443,Jarovce,1996,8.83
+i529443,Jarovce,1997,9.17
+i529443,Jarovce,1998,9.23
+i529443,Jarovce,1999,9.2
+i529443,Jarovce,2000,9.84
+i529443,Jarovce,2001,8.35
+i529443,Jarovce,2002,8.75
+i529443,Jarovce,2003,8.39
+i529443,Jarovce,2004,9
+i529443,Jarovce,2005,9.14
+i529443,Jarovce,2006,9.25
+i529443,Jarovce,2007,8.88
+i529443,Jarovce,2008,8.43
+i529443,Jarovce,2009,7.6
+i529443,Jarovce,2010,8.1
+i529443,Jarovce,2011,8.44
+i529443,Jarovce,2012,8.31
+i529443,Jarovce,2013,8.3
+i529443,Jarovce,2014,7.91
+i529443,Jarovce,2015,7.51
+i529443,Jarovce,2016,7.54
+i529443,Jarovce,2017,7.63
+i529443,Jarovce,2018,7.63
+i529443,Jarovce,2019,7.8
+i529435,Čunovo,1996,9.58
+i529435,Čunovo,1997,10
+i529435,Čunovo,1998,10.17
+i529435,Čunovo,1999,10.5
+i529435,Čunovo,2000,9.5
+i529435,Čunovo,2001,7.88
+i529435,Čunovo,2002,7.95
+i529435,Čunovo,2003,7.25
+i529435,Čunovo,2004,7.89
+i529435,Čunovo,2005,8.1
+i529435,Čunovo,2006,7.57
+i529435,Čunovo,2007,7.68
+i529435,Čunovo,2008,7.98
+i529435,Čunovo,2009,7.28
+i529435,Čunovo,2010,7.46
+i529435,Čunovo,2011,8.47
+i529435,Čunovo,2012,8.91
+i529435,Čunovo,2013,9
+i529435,Čunovo,2014,8.51
+i529435,Čunovo,2015,8.1
+i529435,Čunovo,2016,8.27
+i529435,Čunovo,2017,8.39
+i529435,Čunovo,2018,7.84
+i529435,Čunovo,2019,7.52
+i529494,Rusovce,1996,7.41
+i529494,Rusovce,1997,7.61
+i529494,Rusovce,1998,7.89
+i529494,Rusovce,1999,7.86
+i529494,Rusovce,2000,7.87
+i529494,Rusovce,2001,6.79
+i529494,Rusovce,2002,6.95
+i529494,Rusovce,2003,6.92
+i529494,Rusovce,2004,7.27
+i529494,Rusovce,2005,7.31
+i529494,Rusovce,2006,7.1
+i529494,Rusovce,2007,7.04
+i529494,Rusovce,2008,6.7
+i529494,Rusovce,2009,6.2
+i529494,Rusovce,2010,6.61
+i529494,Rusovce,2011,7.05
+i529494,Rusovce,2012,7.15
+i529494,Rusovce,2013,7.05
+i529494,Rusovce,2014,6.82
+i529494,Rusovce,2015,6.79
+i529494,Rusovce,2016,6.79
+i529494,Rusovce,2017,6.88
+i529494,Rusovce,2018,7.08
+i529494,Rusovce,2019,7.42
+i529427,Záhorská Bystrica,1996,12.64
+i529427,Záhorská Bystrica,1997,12.32
+i529427,Záhorská Bystrica,1998,11.64
+i529427,Záhorská Bystrica,1999,11.09
+i529427,Záhorská Bystrica,2000,10.56
+i529427,Záhorská Bystrica,2001,9.82
+i529427,Záhorská Bystrica,2002,9.56
+i529427,Záhorská Bystrica,2003,9.06
+i529427,Záhorská Bystrica,2004,9.05
+i529427,Záhorská Bystrica,2005,8.73
+i529427,Záhorská Bystrica,2006,8.62
+i529427,Záhorská Bystrica,2007,8.16
+i529427,Záhorská Bystrica,2008,7.8
+i529427,Záhorská Bystrica,2009,7.91
+i529427,Záhorská Bystrica,2010,8.04
+i529427,Záhorská Bystrica,2011,7.71
+i529427,Záhorská Bystrica,2012,7.7
+i529427,Záhorská Bystrica,2013,7.75
+i529427,Záhorská Bystrica,2014,7.76
+i529427,Záhorská Bystrica,2015,7.52
+i529427,Záhorská Bystrica,2016,7.24
+i529427,Záhorská Bystrica,2017,7.1
+i529427,Záhorská Bystrica,2018,6.96
+i529427,Záhorská Bystrica,2019,6.88
+i529371,Devínska Nová Ves,1996,2.86
+i529371,Devínska Nová Ves,1997,3.01
+i529371,Devínska Nová Ves,1998,3.13
+i529371,Devínska Nová Ves,1999,3.18
+i529371,Devínska Nová Ves,2000,3.26
+i529371,Devínska Nová Ves,2001,3.28
+i529371,Devínska Nová Ves,2002,3.37
+i529371,Devínska Nová Ves,2003,3.37
+i529371,Devínska Nová Ves,2004,3.42
+i529371,Devínska Nová Ves,2005,3.48
+i529371,Devínska Nová Ves,2006,3.57
+i529371,Devínska Nová Ves,2007,3.71
+i529371,Devínska Nová Ves,2008,3.86
+i529371,Devínska Nová Ves,2009,3.91
+i529371,Devínska Nová Ves,2010,4.18
+i529371,Devínska Nová Ves,2011,4.3
+i529371,Devínska Nová Ves,2012,4.57
+i529371,Devínska Nová Ves,2013,4.87
+i529371,Devínska Nová Ves,2014,5.12
+i529371,Devínska Nová Ves,2015,5.35
+i529371,Devínska Nová Ves,2016,5.61
+i529371,Devínska Nová Ves,2017,5.91
+i529371,Devínska Nová Ves,2018,6.25
+i529371,Devínska Nová Ves,2019,6.63

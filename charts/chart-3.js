@@ -28,11 +28,13 @@ var makeChart3 = function() {
     Promise.all([
         d3.json("data/chart-3.geojson"),
         d3.json("data/okres.geojson"),
-        d3.json("data/mc.geojson")
+        d3.json("data/mc.geojson"),
+        d3.json("data/danube.geojson"),
+        d3.json("data/danube-line.geojson")
     ]).then(updateChart)
 
-    function updateChart([data, okres, mc, danube]) {
-
+    function updateChart([data, okres, mc, danube, danubeLine]) {
+      console.log(danube)
         //Define projection and path generator
         var projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
 
@@ -62,7 +64,7 @@ var makeChart3 = function() {
             .attr("d", path)
             .style("fill", colors[0])
             .style("stroke", colors[1])
-            .style("stroke-width", "1");
+            .style("stroke-width", "1.2");
 
         
         //Add all the data rectangles
@@ -98,15 +100,37 @@ var makeChart3 = function() {
 
         //Add mestske casti outlines
         chart.append("g")
-        .attr("class", "mc")
-        .selectAll("path")
-        .data(mc.features)
-        .enter()
-        .append("path")
-        .attr("d", path)
-        .style("fill", "none")
-        .style("stroke", colors[1])
-        .style("stroke-width", "0.7");
+          .attr("class", "mc")
+          .selectAll("path")
+          .data(mc.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", "none")
+          .style("stroke", colors[1])
+          .style("stroke-width", "0.7");
+
+        //Add Danube
+        chart.append("g")
+          .attr("class", "danube")
+          .selectAll("path")
+          .data(danube.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", "white");
+
+          chart.append("g")
+            .attr("class", "danubeLine")
+            .selectAll("path")
+            .data(danubeLine.features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .style("fill", "none")
+            .style("stroke", colors[1])
+            .style("stroke-width", "1.2");
+
 
 
         //Add a legend together with background rectangles for interaction
@@ -183,6 +207,7 @@ var makeChart3 = function() {
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", event.pageY + "px")				
                 .select("#value3")
+                .attr("class", "numbers")
                 .text(commaFormat(d.properties.plus65));
        
             //Show the tooltip

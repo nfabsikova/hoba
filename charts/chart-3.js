@@ -9,11 +9,12 @@ var makeChart3 = function() {
     //Define quantize scale to sort data values into buckets of color
     var color = d3.scaleThreshold()
                 .domain([2, 10, 18.5, 27, 35, 43])
-                .range(["#E04E50", "#EB8A7F", "#F7D0C7", "#C6C2D8", "#948BB1", "#675C8D", "#231A57"]);
+                .range(["#ef9c91", "#f4beb5", "#f9dfd9", "#c6c2d8", "#958bb1", "#53487c", "#241a57"]);
 
     //Define legend keys and position
     var keys = ["menej než 2%", "2-10%", "10-18,5%", "", "18,5-27%", "27-35%", "35-43%", "viac než 43%"];
-    var lgColors = ["#E04E50", "#EB8A7F", "#F7D0C7", "none", "#C6C2D8", "#948BB1", "#675C8D", "#231A57"];
+    var lgColors = ["#ef9c91", "#f4beb5", "#f9dfd9", "none", "#c6c2d8", "#958bb1", "#53487c", "#241a57"];
+    let colors = ["#F0F1F2", "#b2b2b2"]
     var lgBottom = h * 0.83;
     var lgLeft = w * 0.09;
     var lgSpacing = 25;
@@ -30,7 +31,7 @@ var makeChart3 = function() {
         d3.json("data/mc.geojson")
     ]).then(updateChart)
 
-    function updateChart([data, okres, mc]) {
+    function updateChart([data, okres, mc, danube]) {
 
         //Define projection and path generator
         var projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
@@ -51,19 +52,7 @@ var makeChart3 = function() {
             .attr("width", w)
             .attr("height", h);
 
-        //Add mestske casti polygons
-        chart.append("g")
-            .attr("class", "mc")
-            .selectAll("path")
-            .data(mc.features)
-            .enter()
-            .append("path")
-            .attr("d", path)
-            .style("fill", "#f6f6f6")
-            .style("stroke", "white")
-            .style("stroke-width", "2");
-
-        //Add colored outlines for okresy
+        //Add okresy polygons
         chart.append("g")
             .attr("class", "okres")
             .selectAll("path")
@@ -71,9 +60,10 @@ var makeChart3 = function() {
             .enter()
             .append("path")
             .attr("d", path)
-            .style("fill", "none")
-            .style("stroke", "#DFDFDF")
-            .style("stroke-width", "2");
+            .style("fill", colors[0])
+            .style("stroke", colors[1])
+            .style("stroke-width", "1");
+
         
         //Add all the data rectangles
         var grid = chart.append("g")
@@ -106,6 +96,19 @@ var makeChart3 = function() {
                 .attr("stroke", d => color(d.properties.plus65))
                 .attr("stroke-width", 0.2);
 
+        //Add mestske casti outlines
+        chart.append("g")
+        .attr("class", "mc")
+        .selectAll("path")
+        .data(mc.features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .style("fill", "none")
+        .style("stroke", colors[1])
+        .style("stroke-width", "0.7");
+
+
         //Add a legend together with background rectangles for interaction
         legend = chart.append("g")
                 .attr("class", "legend")
@@ -134,32 +137,19 @@ var makeChart3 = function() {
             .data(keys)
             .enter()
             .append("text")
+                .attr("class", "numbers")
                 .attr("x", lgLeft + 20)
                 .attr("y", (d,i) => lgBottom - i*lgSpacing) 
-                .style("fill", "#231A57")
                 .text(d => d)
-                .style("font-family", "faktummedium")
                 .style("font-size", "12px")
                 .style("alignment-baseline", "hanging")
                 .attr("pointer-events", "none");
 
-            
-        //Add average in middle of the legend
-        legend.append("line")
-                    .attr("x1", lgLeft)
-                    .attr("y1", lgBottom - 3*lgSpacing + 5)
-                    .attr("x2", lgLeft + 30)
-                    .attr("y2", lgBottom - 3*lgSpacing + 5)
-                    .attr("stroke", "#C6C2D8")
-                    .attr("stroke-width", 2)
-                    .attr("pointer-events", "none");
-
         legendText.append("text")
-                    .attr("x", lgLeft + 40)
-                    .attr("y", lgBottom - 3*lgSpacing + 5)
-                    .style("fill", "#231A57")
+                    .attr("class", "numbers")
+                    .attr("x", lgLeft)
+                    .attr("y", lgBottom - 3*lgSpacing + 6)
                     .text("Bratislavský priemer: 18,5%")
-                    .style("font-family", "faktummedium")
                     .style("font-size", "12px")
                     .style("alignment-baseline", "middle")
                     .attr("pointer-events", "none");

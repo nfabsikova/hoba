@@ -7,7 +7,7 @@ var makeChart1 = function() {
     var margin = {top: 35, right: 0, bottom: 40, left: 0}
 
     //Colors
-    let colors = ["#231A57", "#E04E50"];
+    let colors = ["#241b58", "#e14e50", "#f4f4f4", "#d4d4d4"];
 
     //Background formating
     var background = {
@@ -70,7 +70,7 @@ var makeChart1 = function() {
                   .attr("y", yScale(element + background.height))
                   .attr("width", w - margin.right)
                   .attr("height", yScale(0) - yScale(background.height))
-                  .attr("fill", "#F0F1F2");
+                  .attr("fill", colors[2]);
           } 
 
           //Add gridlines
@@ -82,8 +82,8 @@ var makeChart1 = function() {
                   .attr("y1", yScale(5000))
                   .attr("x2", xScale(element)  + margin.left)
                   .attr("y2", h - margin.bottom)
-                  .attr("stroke-width", "1")
-                  .attr("stroke", "#CBCCCE")
+                  .attr("stroke-width", "0.4pt")
+                  .attr("stroke", colors[3])
           }
           //Add bars
           let bars = chart.append("g").attr("class", "bars")
@@ -192,7 +192,7 @@ var makeChart1 = function() {
               .call(yAxis)
               .selectAll("text")
                   .attr("class", "numbers")
-                  .style("fill", "#CBCCCE")
+                  .style("fill", colors[3])
                   .attr("transform", "translate (" + (margin.left - 6) + ",-6)")
           }
 } 

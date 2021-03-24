@@ -7,7 +7,7 @@ var makeChart2 = function() {
     var margin = {top: 60, right: 100, bottom: 40, left: 60}
 
     //Colors
-    let colors = ["#231A57", "#736B99"];
+    let colors = ["#241b58", "#7e739e", "#f4f4f4", "#d4d4d4"];
 
     //Background rectangles                
     var bgRects = {
@@ -85,7 +85,7 @@ var makeChart2 = function() {
                 .attr("y", y(element))
                 .attr("width", x(d3.max(data, d => d.year)))
                 .attr("height", y(0) - y(bgRects.height))
-                .attr("fill", "#F0F1F2")
+                .attr("fill", colors[2])
                 .attr("pointer-events", "none");
         } 
 
@@ -100,7 +100,7 @@ var makeChart2 = function() {
             .attr("y1", y(0.07))
             .attr("y2", d => y(d.sk))
             .attr("stroke-width", "1")
-            .attr("stroke", "#CBCCCE")
+            .attr("stroke", colors[3])
             .attr("pointer-events", "none")
 
         //Add area
@@ -113,7 +113,7 @@ var makeChart2 = function() {
             .attr("d", area)
             .attr("opacity", "0.3")
             .attr("pointer-events", "none")
-            .attr("fill", "#736B99");
+            .attr("fill", colors[1]);
 
         //Add line for Slovakia
         paths
@@ -122,7 +122,7 @@ var makeChart2 = function() {
             .attr("class", "line")
             .attr("d", lineSk)
             .attr("pointer-events", "none")
-              .style("stroke", "#736B99");
+              .style("stroke", colors[1]);
 
         //Add line for Bratislava 
         paths
@@ -132,7 +132,7 @@ var makeChart2 = function() {
             .attr("d", lineBa)
             .attr("opacity", "1")
             .attr("pointer-events", "none")
-              .style("stroke", "#231A57");
+              .style("stroke", colors[0]);
 
 
        //Add circles
@@ -180,14 +180,14 @@ var makeChart2 = function() {
             .attr("y", y(d3.max(data, d => d.ba)) + 5)
             .text("Bratislava")
             .attr("pointer-events", "none")
-            .style("fill", "#231A57");
+            .style("fill", colors[0]);
 
         chart.append("text")
             .attr("x", x(2050) + 15)
             .attr("y", y(d3.min(data, d => d.sk)) + 5)
             .text("Slovensko")
             .attr("pointer-events", "none")
-            .style("fill", "#736B99");
+            .style("fill", colors[1]);
 
          //Add interactivity to groups
         rects.selectAll("rect").on("mouseover", function(event, d) {
@@ -215,7 +215,7 @@ var makeChart2 = function() {
                     .attr("class", "area temp")
                     .attr("d", area)
                     .attr("pointer-events", "none")
-                    .attr("fill", "#736B99")
+                    .attr("fill", colors[1])
                     .attr("opacity", 0.2)
 
                 chart
@@ -278,6 +278,7 @@ var makeChart2 = function() {
                     .attr("pointer-events", "none")
                     .attr("opacity", "1")
                     .style("fill", colors[0])
+                    .style("font-weight", "700")
                     .text(formatPercent2(d.ba));
 
                 chart
@@ -289,6 +290,7 @@ var makeChart2 = function() {
                     .attr("pointer-events", "none")
                     .attr("opacity", "1")
                     .style("fill", colors[1])
+                    .style("font-weight", "700")
                     .text(formatPercent2(d.sk));
 
             })
@@ -330,7 +332,7 @@ var makeChart2 = function() {
             .call(yAxis)
             .selectAll("text")
                 .classed("numbers", true)
-                .style("fill", "#CBCCCE")
+                .style("fill", colors[3])
                 .attr("transform", "translate (-9, -5)");
         }
    

@@ -18,21 +18,19 @@ text {
     font-family: ff-real-text-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
     fill: #afafae;
 }
 
 .numbers {
   font-family: ff-real-headline-pro, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  fill: #808285;
+  fill: #878787;
 }
 
 h2 {
     font-family: 'tg_praktikalmedium';
     font-weight: normal;
-    color: #1A135C;
+    color: #241b58;
     margin-bottom: 30px;
 }
 
@@ -40,7 +38,7 @@ h2 {
 h3 {
     font-family: 'tg_praktikalmedium';
     font-weight: normal;
-    color: #1A135C;
+    color: #241b58;
     margin-bottom: 80px;
     width: 500px;
 }
@@ -83,8 +81,8 @@ hr {
   max-width: 500px;
   height: 1.6px;
   margin: 0px;
-  color: #1A135C; /* old IE */
-  background-color: #1A135C;
+  color: #241b58; /* old IE */
+  background-color: #241b58;
 }
 
 /* html tooltip formatting*/

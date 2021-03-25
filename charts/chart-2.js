@@ -1,24 +1,24 @@
 
-var makeChart2 = function() {
+let makeChart2 = function() {
 
     //Width, height and margins
-    var w = 700;
-    var h = 600;
-    var margin = {top: 60, right: 100, bottom: 40, left: 60}
+    let w = 700;
+    let h = 600;
+    let margin = {top: 60, right: 100, bottom: 40, left: 60}
 
     //Colors
     let colors = ["#241b58", "#7e739e", "#f4f4f4", "#d4d4d4"];
 
     //Background rectangles                
-    var bgRects = {
+    let bgRects = {
         values: [-0.03, -0.01, 0.01, 0.03, 0.05, 0.07], //value defines the top of the rect
         height: 0.01
     }
 
     //Axes formatting
-    var labelYears = [2016, 2020, 2030, 2040, 2050]
-    var formatPercent = d3.format("+,.0%");
-    var formatPercent2  = function(num) {
+    let labelYears = [2016, 2020, 2030, 2040, 2050]
+    let formatPercent = d3.format("+,.0%");
+    let formatPercent2  = function(num) {
         return d3.format("+,.2%")(num).replace(".", ",");
     }
 
@@ -33,51 +33,51 @@ var makeChart2 = function() {
     function updateChart(data) {
 
         //Create scale functions 
-        var x = d3.scaleLinear()
+        let x = d3.scaleLinear()
                         .domain([d3.min(data, d => d.year),
                                 d3.max(data, d => d.year)])
                         .rangeRound([margin.left, w - margin.right]);
 
-        var y = d3.scaleLinear()
+        let y = d3.scaleLinear()
                     .domain([d3.min(data, d => d.sk),
                             d3.max(data, d => d.ba)])
                     .rangeRound([h - margin.bottom, margin.top]);
         
         //Create axes
-        var xAxis = d3.axisTop()
+        let xAxis = d3.axisTop()
                         .scale(x)
                         .tickValues(labelYears)
                         .tickFormat(d3.format(".4"));
 
-        var yAxis = d3.axisRight()
+        let yAxis = d3.axisRight()
                         .scale(y)
                         .ticks(5)
                         .tickFormat(formatPercent);
 
         //Define area generator (background stripes)
-        var area = d3.area()
+        let area = d3.area()
                     .x(d => x(d.year))
                     .y0(d => y(d.sk))
                     .y1(d => y(d.ba));
         
         
         //Define line generators                
-        var lineBa = d3.line()
+        let lineBa = d3.line()
                         .x(d => x(d.year))
                         .y(d => y(d.ba));
 
-        var lineSk = d3.line()
+        let lineSk = d3.line()
                     .x(d => x(d.year))
                     .y(d => y(d.sk));
 
         //Create chart
-        var chart = d3.select("#chart_2")
+        let chart = d3.select("#chart_2")
                 .append("svg")
                 .attr("width", w)
                 .attr("height", h);
 
         //Add stripes
-        var stripes = chart.append("g").attr("class", "stripes")
+        let stripes = chart.append("g").attr("class", "stripes")
 
         for (element of bgRects.values)   {
                 stripes.append("rect")
@@ -90,7 +90,7 @@ var makeChart2 = function() {
         } 
 
         //Add gridlines
-        var gridLines = chart.append("g").attr("class", "gridLines")
+        let gridLines = chart.append("g").attr("class", "gridLines")
 
         gridLines.selectAll("line")
             .data(data)
@@ -104,7 +104,7 @@ var makeChart2 = function() {
             .attr("pointer-events", "none")
 
         //Add area
-        var paths = chart.append("g").attr("class", "paths")
+        let paths = chart.append("g").attr("class", "paths")
 
         paths
             .append("path")
@@ -136,7 +136,7 @@ var makeChart2 = function() {
 
 
        //Add circles
-       var points = chart.append("g").attr("class", "points")
+       let points = chart.append("g").attr("class", "points")
 
        points.selectAll("circleBa")
             .data(data)
@@ -162,7 +162,7 @@ var makeChart2 = function() {
 
 
         //Add invisible rectangles
-        var rects = chart.append("g").attr("class", "bgRects")
+        let rects = chart.append("g").attr("class", "bgRects")
 
         rects.selectAll("rect")
             .data(data.slice(1))
@@ -204,9 +204,9 @@ var makeChart2 = function() {
                     .attr("opacity", "0")
 
                 //Create highlighted line and area segments
-                var currentYear = d.year;
-                var currentBa = d.ba;
-                var currentSk = d.sk;
+                let currentYear = d.year;
+                let currentBa = d.ba;
+                let currentSk = d.sk;
                 
 
                 chart

@@ -1,26 +1,26 @@
  
-var makeChart3 = function() {
+let makeChart3 = function() {
 
     //Width and Height
-    var w = 850;
-    var h = 700;
-    var margin = {bottom: 40}
+    let w = 850;
+    let h = 700;
+    let margin = {bottom: 40}
 
     //Define quantize scale to sort data values into buckets of color
-    var color = d3.scaleThreshold()
+    let color = d3.scaleThreshold()
                 .domain([2, 10, 18.5, 27, 35, 43])
                 .range(["#ef9c91", "#f4beb5", "#f9dfd9", "#c6c2d8", "#958bb1", "#53487c", "#241a57"]);
 
     //Define legend keys and position
-    var keys = ["menej než 2%", "2-10%", "10-18,5%", "", "18,5-27%", "27-35%", "35-43%", "viac než 43%"];
-    var lgColors = ["#ef9c91", "#f4beb5", "#f9dfd9", "none", "#c6c2d8", "#958bb1", "#53487c", "#241a57"];
+    let keys = ["menej než 2%", "2-10%", "10-18,5%", "", "18,5-27%", "27-35%", "35-43%", "viac než 43%"];
+    let lgColors = ["#ef9c91", "#f4beb5", "#f9dfd9", "none", "#c6c2d8", "#958bb1", "#53487c", "#241a57"];
     let colors = ["#F0F1F2", "#b2b2b2"]
-    var lgBottom = h * 0.83;
-    var lgLeft = w * 0.09;
-    var lgSpacing = 25;
+    let lgBottom = h * 0.83;
+    let lgLeft = w * 0.09;
+    let lgSpacing = 25;
 
     //Number formatting
-    var commaFormat = function(num) {
+    let commaFormat = function(num) {
         return d3.format(".1f")(num).replace(".", ",");
     }
 
@@ -36,20 +36,20 @@ var makeChart3 = function() {
     function updateChart([data, okres, mc, danube, danubeLine]) {
       console.log(danube)
         //Define projection and path generator
-        var projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
+        let projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
 
-        var path = d3.geoPath()
+        let path = d3.geoPath()
                     .projection(projection);
         
         //Set grid rectangle size 
-        var randomRect = data.features[4500];
-        var upLeft = randomRect.geometry.coordinates[0][0][1];
-        var upRight = randomRect.geometry.coordinates[0][0][2];
-        var rectSide = projection([upRight[0], upRight[1]])[0] - projection([upLeft[0], upLeft[1]])[0];
-        var rectCurve = 1.5;
+        let randomRect = data.features[4500];
+        let upLeft = randomRect.geometry.coordinates[0][0][1];
+        let upRight = randomRect.geometry.coordinates[0][0][2];
+        let rectSide = projection([upRight[0], upRight[1]])[0] - projection([upLeft[0], upLeft[1]])[0];
+        let rectCurve = 1.5;
 
         //Create chart
-        var chart = d3.select("#chart_3")
+        let chart = d3.select("#chart_3")
             .append("svg")
             .attr("width", w)
             .attr("height", h);
@@ -68,7 +68,7 @@ var makeChart3 = function() {
 
         
         //Add all the data rectangles
-        var grid = chart.append("g")
+        let grid = chart.append("g")
                 .attr("class", "grid")
                 .selectAll("rect")
                 .data(data.features.filter(d => d.properties.plus65 != null))
@@ -76,11 +76,11 @@ var makeChart3 = function() {
                 .append("rect")
                 .attr("class", (d, i) => "not-" + (d.properties.plus65 > 18.5 ? "bottom" : "top"))
                 .attr("x", function(d) {
-                    var upLeft = d.geometry.coordinates[0][0][1];
+                    let upLeft = d.geometry.coordinates[0][0][1];
                     return projection([upLeft[0], upLeft[1]])[0]
                 }) 
                 .attr("y", function(d) {
-                    var upLeft = d.geometry.coordinates[0][0][1];
+                    let upLeft = d.geometry.coordinates[0][0][1];
                     return projection([upLeft[0], upLeft[1]])[1]
                 }) 
                 .attr("width", rectSide) 
@@ -88,8 +88,8 @@ var makeChart3 = function() {
                 .attr("rx", rectCurve)
                 .attr("ry", rectCurve)
                 .attr("transform", function(d) {
-                    var upLeft = d.geometry.coordinates[0][0][1];
-                    var center = [projection([upLeft[0], upLeft[1]])[0] + rectSide/2,
+                    let upLeft = d.geometry.coordinates[0][0][1];
+                    let center = [projection([upLeft[0], upLeft[1]])[0] + rectSide/2,
                                 projection([upLeft[0], upLeft[1]])[1] + rectSide/2]
                     return "rotate(" + 5 + " " + center[0] + " " + center[1] + ")"
                 })
@@ -137,10 +137,10 @@ var makeChart3 = function() {
         legend = chart.append("g")
                 .attr("class", "legend")
 
-        var legendRects = legend.append("g")
+        let legendRects = legend.append("g")
                                 .attr("class", "legendRects")
 
-        var legendText = legend.append("g")
+        let legendText = legend.append("g")
                                 .attr("class", "legendText")
 
         //Add legend
@@ -239,7 +239,7 @@ var makeChart3 = function() {
        })
 
        //Add interactivity triggered by legend
-       var bgRects = legend.selectAll("rect")
+       let bgRects = legend.selectAll("rect")
 
         bgRects.on("mouseover", function(event, d) {
 

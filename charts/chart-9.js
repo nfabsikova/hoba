@@ -1,16 +1,16 @@
-var makeChart9 = function() {
+let makeChart9 = function() {
 
     //Width, height and columns for chart
-    var chartHeight = 700, chartWidth = 400;
-    var colStart = [0, 160, 380];
-    var barYStart = 40; barXEnd = 200;
+    let chartHeight = 700, chartWidth = 400;
+    let colStart = [0, 160, 380];
+    let barYStart = 40; barXEnd = 200;
 
     //Width, height and margins for map
-    var mapHeight = 600, mapWidth = 350
-    var mapMargin = {right: 30}
+    let mapHeight = 600, mapWidth = 350
+    let mapMargin = {right: 30}
 
     //Colors and pattern
-    var colorScale = d3.scaleThreshold()
+    let colorScale = d3.scaleThreshold()
         .domain([650, 720, 760, 900])
         .range(["#D8D7E5", "#B9B4CF", "#8C86AB", "#5F598C", "#1A135C"]);
 
@@ -27,13 +27,13 @@ var makeChart9 = function() {
         ////////////////////// MAP //////////////////////
         
         //Define projection and path generator
-        var projection = d3.geoMercator().fitSize([mapWidth - mapMargin.right, mapHeight], geo);
+        let projection = d3.geoMercator().fitSize([mapWidth - mapMargin.right, mapHeight], geo);
 
-        var path = d3.geoPath()
+        let path = d3.geoPath()
                     .projection(projection);
 
         //Create map svg
-        var map = d3.select("#chart_9_map")
+        let map = d3.select("#chart_9_map")
             .append("svg")
             .attr("class", "map")
             .attr("width", mapWidth)
@@ -53,15 +53,15 @@ var makeChart9 = function() {
         //Add map interactivity
         map.selectAll("path").on("mouseover", function(event, d) {
             
-            var currentIndex = d.properties.index;
+            let currentIndex = d.properties.index;
 
             chart.selectAll("rect.i" + currentIndex)
                 .attr("fill", "#E04E50")
             
         }).on("mouseout", function(event, d) {
 
-            var currentIndex = d.properties.index;
-            var currentIncome = d.properties.income;
+            let currentIndex = d.properties.index;
+            let currentIncome = d.properties.income;
 
 
             chart.selectAll("rect.i" + currentIndex)
@@ -73,7 +73,7 @@ var makeChart9 = function() {
         ////////////////////// CHART //////////////////////
 
         //Create chart group
-        var chart = d3.select("#chart_9_chart")
+        let chart = d3.select("#chart_9_chart")
             .append("g")
             .attr("class", "chart")
             .append("svg")
@@ -82,17 +82,17 @@ var makeChart9 = function() {
 
 
         //Create scale functions
-        var xScale = d3.scaleLinear()
+        let xScale = d3.scaleLinear()
                         .domain([0, 1250])
                         .range([0, barXEnd])
                         
 
-        var yScale = d3.scaleBand()
+        let yScale = d3.scaleBand()
                         .domain(d3.range(data.length))
                         .range([0, chartHeight - barYStart])
                         .padding(.5)
 
-        var bars = chart.append("g")
+        let bars = chart.append("g")
                         .attr("class", "bars")
 
         console.log(data)
@@ -110,7 +110,7 @@ var makeChart9 = function() {
                 .attr("fill", d => colorScale(d.income))
 
         //add a value label to the right of each bar
-        var valueLabels = chart.append("g")
+        let valueLabels = chart.append("g")
         .attr("class", "valueLabels")
 
         valueLabels.selectAll("labels")
@@ -124,7 +124,7 @@ var makeChart9 = function() {
                     .style("fill", "#2A2355")
 
         //add a text label with obec name
-        var textLabels = chart.append("g")
+        let textLabels = chart.append("g")
             .attr("class", "textLabels")
         
         textLabels.selectAll("labels")
@@ -138,7 +138,7 @@ var makeChart9 = function() {
                     .style("fill", "#2A2355")
 
         //add horizontal lines
-        var lines = chart.append("g")
+        let lines = chart.append("g")
             .attr("class", "lines")
 
         lines.selectAll("line")
@@ -153,7 +153,7 @@ var makeChart9 = function() {
                     .style("stroke-width", "1.5")
 
         //Add invisible bg rects
-        var bgRects = chart.append("g")
+        let bgRects = chart.append("g")
           .attr("class", "bgRects")
 
         bgRects.selectAll("rect")
@@ -168,7 +168,7 @@ var makeChart9 = function() {
             .attr("opacity", 0)
 
         //add header lines
-        var headerLines = chart.append("g")
+        let headerLines = chart.append("g")
                     .attr("class", "headerLines")
 
         headerLines.append("line")
@@ -188,7 +188,7 @@ var makeChart9 = function() {
             .attr("stroke-width", 3.5)
 
         //add header labels
-        var headerLabels = chart.append("g")
+        let headerLabels = chart.append("g")
                     .attr("class", "headerLabels")
 
         headerLabels.append("text")

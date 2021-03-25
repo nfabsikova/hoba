@@ -1,24 +1,24 @@
  
-var makeChart1 = function() {
+let makeChart1 = function() {
 
     //Width and Height
-    var w = 800;
-    var h = 400;
-    var margin = {top: 35, right: 0, bottom: 40, left: 0}
+    let w = 800;
+    let h = 400;
+    let margin = {top: 35, right: 0, bottom: 40, left: 0}
 
     //Colors
     let colors = ["#241b58", "#e14e50", "#f4f4f4", "#d4d4d4"];
 
     //Background formating
-    var background = {
+    let background = {
         values: [-2000, 0, 2000, 4000],
         height: 1000
     };
                   
     //Axes formatting
-    var labelYears = [0, 4, 9, 14, 19, 23];
-    var commaFormat = d3.format(",");
-    var spaceFormat = function(num) {
+    let labelYears = [0, 4, 9, 14, 19, 23];
+    let commaFormat = d3.format(",");
+    let spaceFormat = function(num) {
         return commaFormat(num).replace(/,/, " ");
     }
 
@@ -35,12 +35,12 @@ var makeChart1 = function() {
       function updateChart(data) {
 
           //Create scale functions 
-          var xScale = d3.scaleBand()
+          let xScale = d3.scaleBand()
                           .domain(d3.range(data.length + 1))
                           .rangeRound([80, w - margin.right])
                           .paddingInner(0.4);
 
-          var yScale = d3.scaleLinear()
+          let yScale = d3.scaleLinear()
                       .domain([-2000, 5000])
                       .rangeRound([h - margin.bottom, margin.top]);
           

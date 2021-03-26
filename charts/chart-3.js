@@ -27,7 +27,7 @@ let makeChart3 = function() {
     //Load census data
     Promise.all([
         d3.json("data/chart-3.geojson"),
-        d3.json("data/okres.geojson"),
+        d3.json("data/ba.geojson"),
         d3.json("data/mc.geojson"),
         d3.json("data/danube.geojson"),
         d3.json("data/danube-line.geojson")

@@ -30,7 +30,7 @@ let makeChart4 = function() {
         Promise.all([
             d3.csv("data/chart-4.csv", d3.autoType),
             d3.json("data/mc.geojson"),
-            d3.json("data/okres.geojson"),
+            d3.json("data/ba.geojson"),
             d3.json("data/danube.geojson"),
             d3.json("data/danube-line.geojson")
         ]).then(updateChart);

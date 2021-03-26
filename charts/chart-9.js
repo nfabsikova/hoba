@@ -154,7 +154,8 @@ let makeChart9 = function() {
                 .attr("height", yScale.bandwidth())
                 .attr("fill", d => d.area === 'Bratislava' ? colors[3] : colorScale(d.income))
                 .style("stroke", d => d.area === 'Bratislava' ? colors[2] : colors[0])
-                .style("stroke-width", "0.8");
+                .style("stroke-width", "0.8")
+                .attr("pointer-events", "none");
 
         //add a value label to the right of each bar
         let valueLabels = chart.append("g")
@@ -167,6 +168,7 @@ let makeChart9 = function() {
                 .attr("x", d => xScale(d.income) + 5)
                 .attr("y", (d, i) => yScale(i) + barYStart + yScale.bandwidth())
                 .attr("class", "numbers")
+                .attr("pointer-events", "none")
                 .text(d => d.income + " €")
                     .style("font-size", "12px")
                     .style("fill", d => d.area === 'Bratislava' ? colors[2] : colors[0])
@@ -181,6 +183,7 @@ let makeChart9 = function() {
             .append("text")
                 .attr("x",  barXEnd + 50)
                 .attr("y", (d, i) => yScale(i) + barYStart + yScale.bandwidth())
+                .attr("pointer-events", "none")
                 .text((d, i) => d.area)
                     .style("font-size", "12px")
                     .style("fill", d => d.area === 'Bratislava' ? colors[2] : colors[0])

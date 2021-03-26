@@ -33,7 +33,7 @@ let makeChart3 = function() {
         d3.json("data/danube-line.geojson")
     ]).then(updateChart)
 
-    function updateChart([data, okres, mc, danube, danubeLine]) {
+    function updateChart([data, ba, mc, danube, danubeLine]) {
       console.log(danube)
         //Define projection and path generator
         let projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
@@ -54,11 +54,11 @@ let makeChart3 = function() {
             .attr("width", w)
             .attr("height", h);
 
-        //Add okresy polygons
+        //Add bratislava outline
         chart.append("g")
-            .attr("class", "okres")
+            .attr("class", "ba")
             .selectAll("path")
-            .data(okres.features)
+            .data(ba.features)
             .enter()
             .append("path")
             .attr("d", path)

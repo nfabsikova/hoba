@@ -16,7 +16,7 @@ let makeChart4 = function() {
         let headerTexts = ["mestská časť", "podiel žien<br>vo veku 65+", "zmena v čase<br>(1996-2019)"]
 
         //Colors and pattern
-        let colors = ["#241b58", "#d4d4d4", "#878787", "#e2dfeb", "#f4f4f4"]
+        let colors = ["#241b58", "#d4d4d4", "#878787", "#e2dfeb", "#f4f4f4", "#eb897f"]
         let colorScale = d3.scaleThreshold()
             .domain([8, 10, 12, 15])
             .range(["#e2dfeb", "#c6c2d8", "#948bb0", "#685c8c", "#241b58"]);
@@ -35,7 +35,7 @@ let makeChart4 = function() {
             d3.json("data/danube-line.geojson")
         ]).then(updateChart);
 
-        function updateChart([data, mc, okres, danube, danubeLine]) {
+        function updateChart([data, mc, ba, danube, danubeLine]) {
 
             ////////////////////// MAP //////////////////////
             
@@ -63,9 +63,9 @@ let makeChart4 = function() {
                     .style("stroke", "white")
                     .style("stroke-width", "0.6");
 
-            //Add okresy outlines
-            map.selectAll("path.okres")
-              .data(okres.features)
+            //Add bratislava outline
+            map.selectAll("path.ba")
+              .data(ba.features)
               .enter()
               .append("path")
                   .attr("d", path)
@@ -327,7 +327,7 @@ let makeChart4 = function() {
                 let currentIndex = d[0].index
 
                 map.selectAll("path." + currentIndex)
-                    .attr("fill", "#eb897f")
+                    .attr("fill", colors[5])
 
 
             }).on("mouseout", function(event, d) {
@@ -345,7 +345,7 @@ let makeChart4 = function() {
                 let currentIndex = "i" + d.properties.index
                 
                 chart.selectAll(".rect" + currentIndex)
-                    .attr("fill", "#eb897f")
+                    .attr("fill", colors[5])
 
             }).on("mouseout", function(event, d) {
 

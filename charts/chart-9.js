@@ -1,12 +1,15 @@
-let makeChart9 = function() {
+export function makeChart9(mc, ba, danube, danubeLine) {
 
     //Width, height and columns for chart
-    let chartHeight = 700, chartWidth = 400;
+    let chartHeight = 700
+    let chartWidth = 400;
     let colStart = [0, 160, 380];
-    let barYStart = 40; barXEnd = 200;
+    let barYStart = 40
+    let barXEnd = 200;
 
     //Width, height and margins for map
-    let mapHeight = 600, mapWidth = 350
+    let mapHeight = 600
+    let mapWidth = 350
     let mapMargin = {right: 30}
 
     //Colors and pattern
@@ -18,14 +21,10 @@ let makeChart9 = function() {
 
     //Load data
     Promise.all([
-        d3.csv("data/chart-9.csv", d3.autoType),
-        d3.json("data/mc.geojson"),
-        d3.json("data/ba.geojson"),
-        d3.json("data/danube.geojson"),
-        d3.json("data/danube-line.geojson")
+        d3.csv("data/chart-9.csv", d3.autoType)
     ]).then(updateChart);
 
-    function updateChart([data, mc, ba, danube, danubeLine]) {
+    function updateChart([data]) {
 
         ////////////////////// MAP //////////////////////
         
@@ -97,6 +96,7 @@ let makeChart9 = function() {
 
             bars.selectAll("rect.i" + currentIndex)
                 .attr("fill", colorScale(currentIncome))
+
         })
             
 

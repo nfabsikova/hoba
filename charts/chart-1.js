@@ -1,5 +1,5 @@
  
-let makeChart1 = function() {
+export function makeChart1() {
 
     //Width and Height
     let w = 800;
@@ -64,7 +64,7 @@ let makeChart1 = function() {
           //Add stripes
           let stripes = chart.append("g").attr("class", "stripes")
 
-          for (element of background.values)   {
+          for (let element of background.values)   {
                   stripes.append("rect")
                   .attr("x", margin.left)
                   .attr("y", yScale(element + background.height))
@@ -76,7 +76,7 @@ let makeChart1 = function() {
           //Add gridlines
           let gridLines = chart.append("g").attr("class", "gridLines")
 
-          for (element of labelYears) {
+          for (let element of labelYears) {
               gridLines.append("line")
                   .attr("x1", xScale(element) + margin.left)
                   .attr("y1", yScale(5000))

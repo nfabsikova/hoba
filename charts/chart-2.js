@@ -1,5 +1,5 @@
 
-let makeChart2 = function() {
+export function makeChart2() {
 
     //Width, height and margins
     let w = 700;
@@ -79,7 +79,7 @@ let makeChart2 = function() {
         //Add stripes
         let stripes = chart.append("g").attr("class", "stripes")
 
-        for (element of bgRects.values)   {
+        for (let element of bgRects.values)   {
                 stripes.append("rect")
                 .attr("x", 0)
                 .attr("y", y(element))

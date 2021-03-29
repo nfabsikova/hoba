@@ -1,5 +1,4 @@
- 
-let makeChart3 = function() {
+ export function makeChart3(mc, ba, danube, danubeLine) {
 
     //Width and Height
     let w = 850;
@@ -7,7 +6,7 @@ let makeChart3 = function() {
     let margin = {bottom: 40}
 
     //Define quantize scale to sort data values into buckets of color
-    let color = d3.scaleThreshold()
+    let colorScale = d3.scaleThreshold()
                 .domain([2, 10, 18.5, 27, 35, 43])
                 .range(["#ef9c91", "#f4beb5", "#f9dfd9", "#c6c2d8", "#958bb1", "#53487c", "#241a57"]);
 
@@ -26,20 +25,15 @@ let makeChart3 = function() {
 
     //Load census data
     Promise.all([
-        d3.json("data/chart-3.geojson"),
-        d3.json("data/ba.geojson"),
-        d3.json("data/mc.geojson"),
-        d3.json("data/danube.geojson"),
-        d3.json("data/danube-line.geojson")
+        d3.json("data/chart-3.geojson")
     ]).then(updateChart)
 
-    function updateChart([data, ba, mc, danube, danubeLine]) {
-      console.log(danube)
+    function updateChart([data]) {
+
         //Define projection and path generator
         let projection = d3.geoMercator().fitSize([w, h - margin.bottom], mc);
 
-        let path = d3.geoPath()
-                    .projection(projection);
+        let path = d3.geoPath().projection(projection);
         
         //Set grid rectangle size 
         let randomRect = data.features[4500];
@@ -94,8 +88,8 @@ let makeChart3 = function() {
                     return "rotate(" + 5 + " " + center[0] + " " + center[1] + ")"
                 })
                 .attr("opacity", 1)
-                .attr("fill", d => color(d.properties.plus65))
-                .attr("stroke", d => color(d.properties.plus65))
+                .attr("fill", d => colorScale(d.properties.plus65))
+                .attr("stroke", d => colorScale(d.properties.plus65))
                 .attr("stroke-width", 0.2);
 
         //Add mestske casti outlines
@@ -134,7 +128,7 @@ let makeChart3 = function() {
 
 
         //Add a legend together with background rectangles for interaction
-        legend = chart.append("g")
+        let legend = chart.append("g")
                 .attr("class", "legend")
 
         let legendRects = legend.append("g")

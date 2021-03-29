@@ -1,4 +1,4 @@
-let makeChart6 = function() {
+export function makeChart6() {
 
     //Width, height and margins
     let margin = {left: 4}

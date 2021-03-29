@@ -12,16 +12,10 @@
 
         <!-- Load all scripts -->
         <script src="d3.min.js"></script>
-        <script type="text/javascript" src="charts/chart-1.js"></script>
-        <script type="text/javascript" src="charts/chart-2.js"></script>
-        <script type="text/javascript" src="charts/chart-3.js"></script>
-        <script type="text/javascript" src="charts/chart-4.js"></script>
-        <script type="text/javascript" src="charts/chart-6.js"></script>
-        <script type="text/javascript" src="charts/chart-9.js"></script>
+        <script type="module" src="charts/main.js"></script>
         
 	</head>
 	<body>
-
         <h2>1. Obyvatelia a obyvateľky</h2>
         <!-- Chart 1-->
         <hr class="headline">
@@ -29,7 +23,6 @@
           zvyšuje, a to najmä vďaka prílivu ľudí z iných častí
           Slovenska a iných krajín.</h3>
         <div id="chart_1"> </div>
-        <script type="text/javascript"> makeChart1() </script>
         <hr>
         <p class="footnote">Celkový prírastok obyvateľstva, Zdroj: ŠÚ SR</p>
 
@@ -41,7 +34,6 @@
           že hlavné mesto demograficky vysáva ostatné
           územie, hlavne regióny</h3>
         <div id="chart_2"> </div>
-        <script type="text/javascript"> makeChart2() </script>
         <hr style="max-width:700px;margin-left:0px;margin-top:60px">
         <p class="footnote" style="margin-right: 200px;">Projekcia populácie (v %) pre bratislavský metropolitný región a Slovenskú republiku, Zdroj: Eurostat</p>
 
@@ -51,7 +43,6 @@
                 <p><span id="value3" class="numbers">100</span>%</p>
             </div>
         </div>
-        <script type="text/javascript"> makeChart3() </script>
         <hr>
         <p class="footnote">Odhad podielu trvalo bývajúceho obyvateľstva nad 65 rokov podľa štvorcov, Zdroj: MV SR, Spracoval: Magistrát Hlavného mesta SR Bratislavy</p>
 
@@ -61,7 +52,6 @@
             <div id="chart_4_map" style="width:300;float:left"></div>
             <div id="chart_4_chart" style="width:500px;float:left;margin-bottom: 40px;"></div>
         </div>
-        <script type="text/javascript"> makeChart4() </script>
         <p style="color:white;margin: 0px 50px -20px auto;">a</p>
         <hr>
           <p class="footnote">Zastúpenie žien vo veku 65+, Zdroj: ŠÚ SR</p>
@@ -82,8 +72,6 @@
         <hr>
           <p class="footnote">Odkiaľ prichádzajú denní migranti do Bratislavy?, Zdroj: MarketLocator</p>
 
-        <script type="text/javascript"> makeChart6() </script>
-
         <h2>4. Ekonomická situácia</h2>
 
         <!-- Chart 9 -->
@@ -95,10 +83,14 @@
             <div id="chart_9_map" style="width:400px;float:left"></div>
             <div id="chart_9_chart" style="width:400px;float:left;margin-bottom: 40px;"></div>
         </div>
-        <script type="text/javascript"> makeChart9() </script>
         <p style="color:white;margin: 0px 50px -20px auto;">a</p>
         <hr>
         <p class="footnote">Štvorročný priemer mediánov pracovných príjmov v mestských častiach Bratislavy (2014–2017), Zdroj: Sociálna poisťovňa</p>
+
+        <h2>5. Životné prostredie</h2>
+
+        <!-- Chart 13 -->
+        <div id="chart_13"></div>
 
 
 

@@ -1,4 +1,4 @@
-let makeChart4 = function() {
+export function makeChart4(mc, ba, danube, danubeLine) {
 
         //Width, height and columns for chart
         let svgHeight = 40, svgWidth = 500;
@@ -29,13 +29,9 @@ let makeChart4 = function() {
         //Load data
         Promise.all([
             d3.csv("data/chart-4.csv", d3.autoType),
-            d3.json("data/mc.geojson"),
-            d3.json("data/ba.geojson"),
-            d3.json("data/danube.geojson"),
-            d3.json("data/danube-line.geojson")
         ]).then(updateChart);
 
-        function updateChart([data, mc, ba, danube, danubeLine]) {
+        function updateChart([data]) {
 
             ////////////////////// MAP //////////////////////
             
@@ -384,7 +380,7 @@ let makeChart4 = function() {
                 
                 dataGrouped.forEach(function(d) {
 
-                    dataFiltered = d.filter(d => d.year <= currentYear)
+                    let dataFiltered = d.filter(d => d.year <= currentYear)
 
                     chart.select(".lineDynamic" + d[0].index)
                         .datum(dataFiltered)

@@ -1,4 +1,4 @@
-export function makeChart13(ba, grid, danube, danubeLine) {
+export function makeChart13(ba, grid, gridBg, danube, danubeLine) {
 
     //Width and Height
     let width = 800;
@@ -17,7 +17,6 @@ export function makeChart13(ba, grid, danube, danubeLine) {
     ]).then(updateChart)
 
     function updateChart() {
-      console.log(grid);
 
     //Define projection and path generator
     let projection = d3.geoMercator().fitSize([width, height], ba);
@@ -28,9 +27,8 @@ export function makeChart13(ba, grid, danube, danubeLine) {
     let randomRect = grid.features[100];
     let upLeft = randomRect.geometry.coordinates[0][0][1];
     let upRight = randomRect.geometry.coordinates[0][0][2];
-    let rectSide = projection([upRight[0], upRight[1]])[0] - projection([upLeft[0], upLeft[1]])[0];
-    let rectCurve = 1.5;
-    console.log(upLeft);
+    let rectSide = (projection(upRight)[0] - projection(upLeft)[0]) * 0.98;
+    let rectCurve = 2.5;
 
     //Create svg
     let chart = d3.select("#chart_13")
@@ -38,27 +36,74 @@ export function makeChart13(ba, grid, danube, danubeLine) {
       .attr("width", width)
       .attr("height", height);
 
-    //Add bratislava outline
-      chart.append("g")
-        .attr("class", "ba")
-        .selectAll("path")
-        .data(ba.features)
-        .enter()
-        .append("path")
-        .attr("d", path)
-        .style("fill", "none")
-        .style("stroke", colors[0])
-        .style("stroke-width", "1.2");
-
       //Add grid
       let gridRects = chart.append("g")
               .attr("class", "grid")
-              .selectAll("path.grid")
+              .selectAll("rect")
               .data(grid.features.filter(d => d.properties.temp != null))
               .enter()
-              .append("path")
-              .attr("d", path);
+              .append("rect")
+              .attr("class", (d, i) => "i" + i)
+              .attr("x", function(d) {
+                  let upLeft = d.geometry.coordinates[0][0][1];
+                  return projection(upLeft)[0]
+              }) 
+              .attr("y", function(d) {
+                  let upLeft = d.geometry.coordinates[0][0][1];
+                  return projection(upLeft)[1]
+              }) 
+              .attr("width", rectSide) 
+              .attr("height", rectSide) 
+              .attr("rx", rectCurve)
+              .attr("ry", rectCurve)
+              .attr("transform", function(d) {
+                  let upLeft = d.geometry.coordinates[0][0][1];
+                  let center = [projection(upLeft)[0] + rectSide/2,
+                              projection(upLeft)[1] + rectSide/2]
+                  return "rotate(" + 5 + " " + center[0] + " " + center[1] + ")"
+              })
+              .attr("opacity", 1)
+              .attr("fill", d => colorScale(d.properties.temp))
+              .attr("stroke", d => colorScale(d.properties.temp));
+
+        //Add white background
+        chart.append("g")
+        .attr("class", "bg")
+          .selectAll("path")
+          .data(gridBg.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", "white")
+          .style("stroke", "none");
+
+
+        //Add bratislava outline
+          chart.append("g")
+          .attr("class", "ba")
+          .selectAll("path")
+          .data(ba.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", "none")
+          .style("stroke", colors[0])
+          .style("stroke-width", "1.2");
     
+      chart.append("circle")
+      .attr("cx", projection(upLeft)[0])
+      .attr("cy", projection(upLeft)[1])
+      .attr("r", "3px")
+      .attr("fill", "black")
+
+      chart.append("circle")
+      .attr("cx", projection(upRight)[0])
+      .attr("cy", projection(upRight)[1])
+      .attr("r", "3px")
+      .attr("fill", "blue")
+
+
+
 
     }
 

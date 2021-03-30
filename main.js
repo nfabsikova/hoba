@@ -34,7 +34,7 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   makeChart4(mc, ba, danube, danubeLine);
   makeChart6();
   makeChart9(mc, ba, danube, danubeLine);
-  makeChart13(ba, grid, gridBg, danube, danubeLine);
+  //makeChart13(ba, grid, gridBg, danube, danubeLine);
 }
 
 

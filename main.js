@@ -1,19 +1,19 @@
 //Load chart functions
-import {makeChart1} from "/charts/chart-1.js"
-import {makeChart2} from "/charts/chart-2.js"
-import {makeChart3} from "/charts/chart-3.js"
-import {makeChart4} from "/charts/chart-4.js"
-import {makeChart6} from "/charts/chart-6.js"
-import {makeChart9} from "/charts/chart-9.js"
-import {makeChart13} from "/charts/chart-13.js";
+import {makeChart1} from "./charts/chart-1.js"
+import {makeChart2} from "./charts/chart-2.js"
+import {makeChart3} from "./charts/chart-3.js"
+import {makeChart4} from "./charts/chart-4.js"
+import {makeChart6} from "./charts/chart-6.js"
+import {makeChart9} from "./charts/chart-9.js"
+import {makeChart13} from "./charts/chart-13.js";
 
 Promise.all([
-  d3.json("data/mc.geojson"),
-  d3.json("data/ba.geojson"),
-  d3.json("data/grid.geojson"),
-  d3.json("data/grid-bg.geojson"),
-  d3.json("data/danube.geojson"),
-  d3.json("data/danube-line.geojson")
+  d3.json("./data/mc.geojson"),
+  d3.json("./data/ba.geojson"),
+  d3.json("./data/grid.geojson"),
+  d3.json("./data/grid-bg.geojson"),
+  d3.json("./data/danube.geojson"),
+  d3.json("./data/danube-line.geojson")
 ]).then(makeCharts);
 
 function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLineData]) {
@@ -28,7 +28,7 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   console.log(gridBg);
 
   //Create charts
-   makeChart1();
+  makeChart1();
   makeChart2();
   makeChart3(mc, ba, danube, danubeLine);
   makeChart4(mc, ba, danube, danubeLine);

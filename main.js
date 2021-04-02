@@ -29,12 +29,12 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   console.log(gridBg);
 
   //Create charts
-/*   makeChart1();
+  makeChart1();
   makeChart2();
   makeChart3(mc, ba, danube, danubeLine);
   makeChart4(mc, ba, danube, danubeLine);
   makeChart6();
-  makeChart9(mc, ba, danube, danubeLine); */
+  makeChart9(mc, ba, danube, danubeLine);
   makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
   makeChart14(mc, ba, grid, gridBg, danube, danubeLine);
 }

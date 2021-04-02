@@ -207,7 +207,7 @@
             //Show the tooltip
             d3.select("#tooltip3").classed("hidden", false);
 
-            //Add black outline
+            //Add white outline
             chart.append("rect")
                 .attr("class", "temp")
                 .attr("x", d3.select(this).attr("x"))

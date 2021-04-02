@@ -88,7 +88,9 @@ hr {
 
 /* html tooltip formatting*/
 #tooltip3,
-#tooltip6 {
+#tooltip6,
+#tooltip13,
+#tooltip14 {
     position: absolute;
     width: auto;
     height: auto;
@@ -108,7 +110,9 @@ hr {
 }
 
 #tooltip3 p,
-#tooltip6 p {
+#tooltip6 p,
+#tooltip13 p,
+#tooltip14 p {
     margin: 0;
     color: #afafae;
     font-family: ff-real-text-pro, sans-serif;

@@ -6,6 +6,7 @@ import {makeChart4} from "./charts/chart-4.js"
 import {makeChart6} from "./charts/chart-6.js"
 import {makeChart9} from "./charts/chart-9.js"
 import {makeChart13} from "./charts/chart-13.js";
+import {makeChart14} from "./charts/chart-14.js";
 
 Promise.all([
   d3.json("./data/mc.geojson"),
@@ -28,13 +29,14 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   console.log(gridBg);
 
   //Create charts
-  makeChart1();
+/*   makeChart1();
   makeChart2();
   makeChart3(mc, ba, danube, danubeLine);
   makeChart4(mc, ba, danube, danubeLine);
   makeChart6();
-  makeChart9(mc, ba, danube, danubeLine);
-  //makeChart13(ba, grid, gridBg, danube, danubeLine);
+  makeChart9(mc, ba, danube, danubeLine); */
+  makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
+  makeChart14(mc, ba, grid, gridBg, danube, danubeLine);
 }
 
 

@@ -118,8 +118,7 @@ export function makeChart6() {
             .text(d => d)
             .style("font-size", "12px")
             .attr("pointer-events", "none")
-            .style("fill", colors[4]); 
-
+            .style("fill", colors[4])
 
 
         //Add interactive tooltips
@@ -258,18 +257,17 @@ export function makeChart6() {
                     .attr("y", (d, i) => yScale(i) + barYStart + yScale.bandwidth())
                     .text(d => spaceFormat(d.flow))
                         .style("fill", colors[0])
+                        .style("font-size", "12px")
 
             //add bottom label
             chart.append("foreignObject")
                 .attr("x", barXStart - 30)
                 .attr("y", barYStart + barHeight - 10)
-                .attr("width", 150)
+                .attr("width", 170)
                 .attr("height", 50)
                 .attr("pointer-events", "none")
                 .append("xhtml:body")
-                    .html("<p>80 604 z iných miest</p>")
-                    .style("font-family", "ff-real-headline-pro, sans-serif")
-                    .style("font-size", "12px")
+                    .html("<p style='font-size:14px'>80 604 z iných miest</p>")
                     .style("color", colors[4])
 
 
@@ -302,9 +300,9 @@ export function makeChart6() {
             .attr("height", 170)
             .attr("pointer-events", "none")
             .append("xhtml:h3")
-                .style("line-height", "1.5")
                 .style("text-anchor", "start")
-                .html("<p>138 557 SIM kariet denne<br>prichádza do Bratislavy<br>z Bratislavského a Trnavského<br>kraja, 57 953 z nich pochádza<br>zo 14 miest.</p>")
+                .html("<h3>138 557 SIM kariet denne<br>prichádza do Bratislavy<br>z Bratislavského a Trnavského<br>kraja, 57 953 z nich pochádza<br>zo 14 miest.</h3>")
+                .style("font-size", "16px")
 
         header.append("line")
             .attr("x1", 0)

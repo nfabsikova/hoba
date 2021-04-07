@@ -14,6 +14,14 @@ body {
 }
 
 /* text formatting */
+p {
+  font-family: ff-real-text-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #808285;
+}
+
 text {
     font-family: ff-real-text-pro, sans-serif;
     font-weight: 300;
@@ -24,8 +32,15 @@ text {
 
 .numbers {
   font-family: ff-real-headline-pro, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   fill: #878787;
+}
+
+h1 {
+  font-family: 'tg_praktikalmedium';
+  font-weight: normal;
+  color: #241b58;
+  margin-bottom: 34px;
 }
 
 h2 {
@@ -80,7 +95,7 @@ hr {
 
 .headline {
   max-width: 500px;
-  height: 1.6px;
+  height: 2px;
   margin: 0px;
   color: #241b58; /* old IE */
   background-color: #241b58;
@@ -116,7 +131,7 @@ hr {
     margin: 0;
     color: #afafae;
     font-family: ff-real-text-pro, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 

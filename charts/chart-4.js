@@ -172,7 +172,6 @@ export function makeChart4(mc, ba, danube, danubeLine) {
                   .attr("opacity", 0)
                   .style("fill", colors[0])
                   .style("text-align", "center")
-                  .style("font-size", "14px")
 
             //Group data
             let dataGrouped = d3.group(data, d => d.area)
@@ -301,6 +300,7 @@ export function makeChart4(mc, ba, danube, danubeLine) {
                     .attr("y", d => yScale(d[23].share) + 7)
                     .text(d => commaFormat(d[23].share) + "%")
                     .style("fill", currentArea == "Bratislava" ? colors[2] : colors[0])
+                    .style("font-size", "12px")
 
                 //Add rects for interaction
                 lineChart.append("rect")

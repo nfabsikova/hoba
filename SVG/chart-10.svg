@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 370" style="enable-background:new 0 0 200 370;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#241B58;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
+	.st1{fill:#7E739E;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
+	.st2{fill:#F4F4F4;}
+	.st3{fill:#D9D9D9;}
+	.st4{font-family:'RealTextPro-Regular';}
+	.st5{font-size:6.5px;}
+	.st6{fill:#D4D4D4;}
+	.st7{fill:#E2DFEB;}
+	.st8{fill:#7E739E;}
+	.st9{fill:none;stroke:#948BB0;stroke-width:0.5233;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#241B58;stroke-width:0.5184;stroke-miterlimit:10;}
+	.st11{fill:#241B58;}
+	.st12{font-family:'RealTextPro-Bold';}
+	.st13{fill:#878787;}
+	.st14{fill:none;stroke:#878787;stroke-width:0.75;}
+	.st15{fill:#FFFFFF;}
+	.st16{fill:none;stroke:#948BB0;stroke-width:0.75;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#241B58;stroke-width:0.75;stroke-miterlimit:10;}
+</style>
+<symbol  id="Point_primary" viewBox="-3 -3 6.1 6.1">
+	<g>
+		<g>
+			<path class="st0" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6S2.6,1.4,2.6,0z"/>
+		</g>
+	</g>
+</symbol>
+<symbol  id="Point_secondary" viewBox="-3 -3 6.1 6.1">
+	<g>
+		<g>
+			<g>
+				<g>
+					<path class="st1" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6S2.6,1.4,2.6,0z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</symbol>
+<g>
+	<g>
+		<g>
+			<rect x="0.5" y="274.3" class="st2" width="199.8" height="42.4"/>
+			<rect x="0.5" y="189.2" class="st2" width="199.8" height="42.4"/>
+			<rect x="0.5" y="104.1" class="st2" width="199.8" height="42.4"/>
+			<rect x="0.5" y="33.8" class="st2" width="199.8" height="27.7"/>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 0.4958 316.7219)" class="st3 st4 st5">0 €</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 0.4958 231.6653)" class="st6 st4 st5">1</text>
+			<text transform="matrix(1 0 0 1 4.3958 231.6653)" class="st6 st4 st5"> </text>
+			<text transform="matrix(1 0 0 1 5.6958 231.6653)" class="st6 st4 st5">000 €</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 0.4958 146.6086)" class="st3 st4 st5">2</text>
+			<text transform="matrix(1 0 0 1 4.3958 146.6086)" class="st3 st4 st5"> </text>
+			<text transform="matrix(1 0 0 1 5.6958 146.6086)" class="st3 st4 st5">000 €</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 0.4958 61.551)" class="st3 st4 st5">3</text>
+			<text transform="matrix(1 0 0 1 4.3958 61.551)" class="st3 st4 st5"> </text>
+			<text transform="matrix(1 0 0 1 5.6958 61.551)" class="st3 st4 st5">000 €</text>
+		</g>
+	</g>
+	<polygon class="st7" points="51.7,179 146.5,34.3 146.5,316.8 51.6,316.8 	"/>
+	<polygon class="st8" points="51.7,247.6 146.5,177.2 146.5,273.7 51.6,293.4 	"/>
+	<line class="st9" x1="51.6" y1="179" x2="51.6" y2="316.7"/>
+	<line class="st10" x1="51.6" y1="247.6" x2="51.6" y2="293.4"/>
+	<text transform="matrix(1 0 0 1 150.1274 233.6653)" class="st11 st4 st5">median </text>
+	<text transform="matrix(1 0 0 1 174.3274 233.6653)" class="st11 st12 st5">1 003 €</text>
+	<text transform="matrix(1 0 0 1 150.1274 275.5042)" class="st11 st4 st5">Q₁ </text>
+	<text transform="matrix(1 0 0 1 159.1274 275.5042)" class="st11 st12 st5">501 €</text>
+	<text transform="matrix(1 0 0 1 150.1274 180.3975)" class="st11 st4 st5">Q₃</text>
+	<text transform="matrix(1 0 0 1 157.7274 180.3975)" class="st11 st4 st5"> </text>
+	<text transform="matrix(1 0 0 1 159.0274 180.3975)" class="st11 st12 st5">1 631 €</text>
+	<g>
+		<text transform="matrix(1 0 0 1 150.1274 35.8298)" class="st8 st4 st5">max </text>
+		<text transform="matrix(1 0 0 1 164.3274 35.8298)" class="st8 st12 st5">3 326 €</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0003 0 0 1 146.5474 14.2217)" class="st13 st4 st5">2017</text>
+	</g>
+	<line class="st14" x1="146.5" y1="4.1" x2="200.3" y2="4.1"/>
+	<g>
+		<text transform="matrix(1.0003 0 0 1 0.4946 13.1958)" class="st13 st4 st5">2004</text>
+	</g>
+	<line class="st14" x1="0.5" y1="4.1" x2="51.6" y2="4.1"/>
+	<text transform="matrix(1 0 0 1 4.5437 275.5039)" class="st11 st4 st5">median </text>
+	<text transform="matrix(1 0 0 1 28.7437 275.5039)" class="st11 st12 st5">506 €</text>
+	<text transform="matrix(1 0 0 1 19.7078 295.5305)" class="st11 st4 st5">Q₁ </text>
+	<text transform="matrix(1 0 0 1 28.7078 295.5305)" class="st11 st12 st5">270 €</text>
+	<text transform="matrix(1 0 0 1 19.8445 250.4292)" class="st11 st4 st5">Q₃</text>
+	<text transform="matrix(1 0 0 1 27.4445 250.4292)" class="st11 st4 st5"> </text>
+	<text transform="matrix(1 0 0 1 28.7445 250.4292)" class="st11 st12 st5">812 €</text>
+	<g>
+		<text transform="matrix(1 0 0 1 9.2493 180.6846)" class="st8 st4 st5">max </text>
+		<text transform="matrix(1 0 0 1 23.4493 180.6846)" class="st8 st12 st5">1 624 €</text>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="48.6" y="270.7" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_2_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_58_" x="-3" y="-3" transform="matrix(1 0 0 -1 51.6086 273.675)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_3_" x="48.6" y="290.4" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_4_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_57_" x="-3" y="-3" transform="matrix(1 0 0 -1 51.6086 293.3604)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_5_" x="48.6" y="244.6" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_6_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_56_" x="-3" y="-3" transform="matrix(1 0 0 -1 51.6086 247.6428)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_7_" x="48.6" y="176.2" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_8_);">
+			
+				<use xlink:href="#Point_secondary"  width="6.1" height="6.1" id="XMLID_55_" x="-3" y="-3" transform="matrix(1 0 0 -1 51.6086 179.1789)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 91.8828 250.3247)" class="st15 st4 st5">50%</text>
+	<text transform="matrix(1 0 0 1 91.3828 259.3247)" class="st15 st4 st5">osôb</text>
+	<text transform="matrix(1 0 0 1 91.9639 166.5745)" class="st11 st4 st5">25%</text>
+	<text transform="matrix(1 0 0 1 91.3639 175.5745)" class="st11 st4 st5">osôb</text>
+	<line class="st16" x1="146.5" y1="33.8" x2="146.5" y2="316.7"/>
+	<line class="st17" x1="146.5" y1="178" x2="146.5" y2="273.7"/>
+	<g>
+		<defs>
+			<rect id="SVGID_9_" x="143.5" y="228.4" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_10_">
+			<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_10_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_54_" x="-3" y="-3" transform="matrix(1 0 0 -1 146.5476 231.4472)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_11_" x="143.5" y="270.7" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_12_">
+			<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_12_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_53_" x="-3" y="-3" transform="matrix(1 0 0 -1 146.5476 273.675)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_13_" x="143.5" y="175" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_14_">
+			<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_14_);">
+			
+				<use xlink:href="#Point_primary"  width="6.1" height="6.1" id="XMLID_52_" x="-3" y="-3" transform="matrix(1 0 0 -1 146.5476 177.9741)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_15_" x="143.5" y="31.3" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_16_">
+			<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_16_);">
+			
+				<use xlink:href="#Point_secondary"  width="6.1" height="6.1" id="XMLID_51_" x="-3" y="-3" transform="matrix(1 0 0 -1 146.5476 34.3241)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_17_" x="143.5" y="313.8" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_18_">
+			<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_18_);">
+			
+				<use xlink:href="#Point_secondary"  width="6.1" height="6.1" id="XMLID_50_" x="-3" y="-3" transform="matrix(1 0 0 -1 146.5476 316.8125)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_19_" x="48.6" y="313.8" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_20_">
+			<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_20_);">
+			
+				<use xlink:href="#Point_secondary"  width="6.1" height="6.1" id="XMLID_49_" x="-3" y="-3" transform="matrix(1 0 0 -1 51.6086 316.8125)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 91.9639 300.4263)" class="st11 st4 st5">25%</text>
+	<text transform="matrix(1 0 0 1 91.3639 309.4263)" class="st11 st4 st5">osôb</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 0.4969 345.6489)" class="st13 st4 st5">Distribúcia mzdy v Bratislave (2004 vs. 2017), Zdroj: SP</text>
+</g>
+<line class="st14" x1="0.5" y1="333.2" x2="200.3" y2="333.2"/>
+</svg>

@@ -1,6 +1,12 @@
  
 export function makeChart1() {
 
+    // *** CHART SETTINGS ***
+    
+    //Headline and footnote
+    let headline = "Po rokoch stagnácie sa počet obyvateľov Bratislavy zvyšuje, a to najmä vďaka prílivu ľudí z iných častí Slovenska a iných krajín.";
+    let footnote = "Celkový prírastok obyvateľstva, Zdroj: ŠÚ SR";
+
     //Width and Height
     let w = 800;
     let h = 400;
@@ -21,6 +27,28 @@ export function makeChart1() {
     let spaceFormat = function(num) {
         return commaFormat(num).replace(/,/, " ");
     }
+
+    // *** END OF SETTINGS ***
+    
+    //Create all chart section elements
+
+    //Create headline
+    d3.select("#chart1").append("hr").attr("class", "headline")
+
+    d3.select("#chart1").append("h3").text(headline)
+
+    //Create svg
+    let chart = d3.select("#chart1")
+      .append("div").attr("id", "chart1_container")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+
+    //Create footnote
+    d3.select("#chart1").append("hr")
+    
+    d3.select("#chart1").append("p").attr("class", "footnote").text(footnote)
+      
 
     d3.csv("data/chart-1.csv", d3.autoType)
         .then(dataIsReady);
@@ -54,12 +82,6 @@ export function makeChart1() {
                           .scale(yScale)
                           .tickValues(background.values)
                           .tickFormat(spaceFormat);
-
-          //Create chart
-          let chart = d3.select("#chart_1")
-                          .append("svg")
-                          .attr("width", w)
-                          .attr("height", h);
 
           //Add stripes
           let stripes = chart.append("g").attr("class", "stripes")

@@ -3,6 +3,7 @@ import {makeChart1} from "./charts/chart-1.js"
 import {makeChart2} from "./charts/chart-2.js"
 import {makeChart3} from "./charts/chart-3.js"
 import {makeChart4} from "./charts/chart-4.js"
+import {makeChart5, makeChart10, makeChart11, makeStaticChart} from "./charts/staticCharts.js"
 import {makeChart6} from "./charts/chart-6.js"
 import {makeChart9} from "./charts/chart-9.js"
 import {makeChart13} from "./charts/chart-13.js";
@@ -26,19 +27,23 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   let gridBg = gridBgData;
   let danube = danubeData;
   let danubeLine = danubeLineData;
-  console.log(gridBg);
 
   //Create charts
   makeChart1();
   makeChart2();
   makeChart3(mc, ba, danube, danubeLine);
   makeChart4(mc, ba, danube, danubeLine);
+  makeChart5();
   makeChart6();
+  makeStaticChart(7, 800);
+  makeStaticChart(8, 600);
   makeChart9(mc, ba, danube, danubeLine);
+  makeChart10();
+  makeChart11();
+  makeStaticChart(12, 400);
   makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
   makeChart14(mc, ba, grid, gridBg, danube, danubeLine);
 }
-
 
 
 

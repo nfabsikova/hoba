@@ -1,5 +1,7 @@
 export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
 
+    // *** CHART SETTINGS ***
+
     //Width and Height
     let width = 800;
     let height = 600;
@@ -20,16 +22,43 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
     let lgLeft = width * 0.12;
     let lgHeight = 25;
 
+    // *** END OF SETTINGS ***
+
+    //Add all chart elements
+
+    d3.select("#chart13").append("div").attr("id", "chart13_container");
+
+    //Create svg
+      let chart = d3.select("#chart13_container")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    //Create tooltip
+    let tooltip = d3.select("#chart13_container").append("div").attr("id", "tooltip13").attr("class", "hidden");
+    tooltip.append("p").append("span").attr("id", "value13").attr("class", "numbers").text(100);
+
+
+//     <div id="tooltip13" class="hidden">
+//     <p><span id="value13" class="numbers">100</span>°C</p>
+// </div>
+// </div>
+// <hr>
+// <p class="footnote">Ohrozenie horúčavami podľa štvorcov 1x1km Zdroj: USGS/NASA Landsat 8 Program, 2018. Spracoval: Útvar hlavnej architektky, Hlavné mesto SR Bratislava 2020.</p>
+
+
     //Load forrest area
     Promise.all([
+      d3.json("./data/lesy.geojson")
     ]).then(updateChart)
 
-    function updateChart() {
-
+    function updateChart(lesy) {
+      console.log(lesy[0]);
     //Define projection and path generator
     let projection = d3.geoMercator().fitSize([width, height - marginBottom], ba);
 
     let path = d3.geoPath().projection(projection);
+
 
     //Set grid rectangle size 
     let randomRect = grid.features[100];
@@ -38,11 +67,23 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
     let rectSide = (projection(upRight)[0] - projection(upLeft)[0]) * 0.98;
     let rectCurve = 2.5;
 
-    //Create svg
-    let chart = d3.select("#chart_13")
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height);
+    //Define forest pattern
+    var defs = chart.append("defs")
+
+    var pattern = defs
+        .append("pattern")
+        .attr("id", "hash")
+        .attr("height", 6)
+        .attr("width", 6)
+        .attr("patternUnits", "userSpaceOnUse")
+        .attr("patternTransform", "rotate(-45)");
+
+    pattern
+        .append("rect")
+        .attr("height", "6")
+        .attr("width", "0.8")
+        .attr("opacity", "1")
+        .attr("fill", "#7e739e");
 
       //Add grid
       let gridRects = chart.append("g")
@@ -134,6 +175,18 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
           .style("stroke", colors[0])
           .style("stroke-width", "1.2");
 
+          //Add forests
+          chart.append("g")
+              .attr("class", "lesy")
+              .selectAll("path")
+              .data(lesy[0].features)
+              .enter()
+              .append("path")
+              .attr("d", path)
+              .attr("pointer-events", "none")
+              .style("fill", "url('#hash')")
+              .style("stroke", "#7e739e");
+
           //Add legend
           let legend = chart.append("g")
             .attr("class", "legend")
@@ -171,6 +224,12 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
               .attr("pointer-events", "none")
               .style("alignment-baseline", "hanging"); 
 
+          //Add forest
+          chart.append("img")  
+            .attr("src","../SVG/forest.svg")
+            .attr("width", 1000)
+            .attr("height", 800)
+
 
           //Add interactivity
           gridRects.on("mousemove", function (event, d) {
@@ -181,7 +240,7 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
                 .style("top", event.pageY + "px")				
                 .select("#value13")
                 .attr("class", "numbers")
-                .text(d.properties.temp.toFixed());
+                .text(d.properties.temp.toFixed() + "°C");
 
             //Show the tooltip
             d3.select("#tooltip13").classed("hidden", false);

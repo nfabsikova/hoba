@@ -1,5 +1,9 @@
 export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
 
+  // *** CHART SETTINGS ***
+
+  let footnote = "Ohrozenie zrážkami podľa štvorcov 1x1km, Zdroj: Atlas hodnotenia dopadov zmeny klímy na území hlavného mesta SR Bratislavy";
+
   //Width and Height
   let width = 800;
   let height = 600;
@@ -20,6 +24,27 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
   let lgLeft = width * 0.12;
   let lgHeight = 25;
 
+  // *** END OF SETTINGS ***
+
+  //Create all chart elements
+  d3.select("#chart14").append("div").attr("id", "chart14_container");
+
+  //Create svg
+  let chart = d3.select("#chart14_container")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  //Create tooltip
+  let tooltip = d3.select("#chart14_container").append("div").attr("id", "tooltip14").attr("class", "hidden").append("p");
+  tooltip.append("span").attr("id", "value14").attr("class", "numbers").text("100 budov").append("span");
+  tooltip.append("span").text("/km");
+  tooltip.append("span").append("sup").text("2");
+
+  //Create footnote
+  d3.select("#chart14").append("hr");
+  d3.select("#chart14").append("p").attr("class", "footnote").text(footnote);
+
   //Load forrest area
   Promise.all([
   ]).then(updateChart)
@@ -37,12 +62,6 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
   let upRight = randomRect.geometry.coordinates[0][0][2];
   let rectSide = (projection(upRight)[0] - projection(upLeft)[0]) * 0.98;
   let rectCurve = 2.5;
-
-  //Create svg
-  let chart = d3.select("#chart_14")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
 
     //Add grid
     let gridRects = chart.append("g")

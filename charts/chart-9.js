@@ -1,5 +1,11 @@
 export function makeChart9(mc, ba, danube, danubeLine) {
 
+    // *** CHART SETTINGS ***
+
+    //Headline and footnote
+    let headline = "Najvyššie mzdy (pracovné príjmy) majú v Bratislave obyvatelia Starého Mesta. Za ním nasledujú obyvatelia Čunova, Lamača aj vzdialenejšej severnej časti Záhorskej Bystrice. Naopak najmenej zarábajúce pracovné miesta obsadzujú obyvatelia Vrakune, Vajnor, Podunajských Biskupíc a Devína.";
+    let footnote = "Štvorročný priemer mediánov pracovných príjmov v mestských častiach Bratislavy (2014–2017), Zdroj: Sociálna poisťovňa";
+
     //Width, height and columns for chart
     let chartHeight = 700
     let chartWidth = 400;
@@ -18,6 +24,38 @@ export function makeChart9(mc, ba, danube, danubeLine) {
         .domain([650, 720, 760, 900])
         .range(["#D8D7E5", "#B9B4CF", "#8C86AB", "#5F598C", "#1A135C"]);
 
+    // *** END OF SETTINGS ***
+
+    //Add all chart elements
+
+    //Create headline
+    d3.select("#chart9").append("hr").attr("class", "headline");
+    d3.select("#chart9").append("h3").text(headline);
+
+    //Create svgs
+    d3.select("#chart9").append("div").attr("id", "chart9_container");
+    d3.select("#chart9_container").append("div").attr("id", "chart9_map").style("width", "400px").style("float", "left");
+    d3.select("#chart9_container").append("div").attr("id", "chart9_chart").style("width", "400px").style("float", "left").style("margin-bottom", "40px");
+
+    //Create map svg
+    let map = d3.select("#chart9_map")
+      .append("svg")
+      .attr("class", "map")
+      .attr("width", mapWidth)
+      .attr("height", mapHeight)
+
+    //Create chart svg
+    let chart = d3.select("#chart9_chart")
+      .append("g")
+      .attr("class", "chart")
+      .append("svg")
+          .attr("width", chartWidth)
+          .attr("height", chartHeight)
+
+    //Create footnote
+    d3.select("#chart9").append("p").text("a").style("color", "white").style("font-size", "2px");
+    d3.select("#chart9").append("hr")
+    d3.select("#chart9").append("p").attr("class", "footnote").text(footnote)
 
     //Load data
     Promise.all([
@@ -33,13 +71,6 @@ export function makeChart9(mc, ba, danube, danubeLine) {
 
         let path = d3.geoPath()
                     .projection(projection);
-
-        //Create map svg
-        let map = d3.select("#chart_9_map")
-            .append("svg")
-            .attr("class", "map")
-            .attr("width", mapWidth)
-            .attr("height", mapHeight)
 
         //Add mestske casti polygons
         map.selectAll("path")
@@ -102,15 +133,6 @@ export function makeChart9(mc, ba, danube, danubeLine) {
 
 
         ////////////////////// CHART //////////////////////
-
-        //Create chart group
-        let chart = d3.select("#chart_9_chart")
-            .append("g")
-            .attr("class", "chart")
-            .append("svg")
-                .attr("width", chartWidth)
-                .attr("height", chartHeight)
-
 
         //Create scale functions
         let xScale = d3.scaleLinear()

@@ -16,7 +16,7 @@
               .range(["#ef9c91", "#f4beb5", "#f9dfd9", "#c6c2d8", "#958bb1", "#53487c", "#241a57"]);
 
   //Define legend keys and position
-  let keys = ["menej než 2%", "2-10%", "10-18,5%", "", "18,5-27%", "27-35%", "35-43%", "viac než 43%"];
+  let keys = ["menej než 2%", "2–10%", "10–18,5%", "", "18,5–27%", "27–35%", "35–43%", "viac než 43%"];
   let lgColors = ["#ef9c91", "#f4beb5", "#f9dfd9", "none", "#c6c2d8", "#958bb1", "#53487c", "#241a57"];
   let colors = ["#F0F1F2", "#b2b2b2"]
   let lgBottom = h * 0.83;

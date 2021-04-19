@@ -40,7 +40,7 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   makeChart9(mc, ba, danube, danubeLine);
   makeChart10();
   makeChart11();
-  makeStaticChart(12, 400);
+  makeStaticChart(12, 500);
   makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
   makeChart14(mc, ba, grid, gridBg, danube, danubeLine);
 }

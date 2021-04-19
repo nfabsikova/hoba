@@ -4,7 +4,7 @@ export function makeChart2() {
   // *** CHART SETTINGS ***
   
   //Headline and footnote
-  let headline = "Rozdiel v populačnej dynamike medzi metropolitným regiónom Bratislavy a zvyškom krajiny sa v najbližších rokoch pravdepodobne prehĺbi, pretože hlavné mesto demograficky vysáva ostatné územie, hlavne regióny."
+  let headline = "Rozdiel v populačnej dynamike medzi metropolitným regiónom Bratislavy a zvyškom krajiny sa v najbližších rokoch pravdepodobne prehĺbi, pretože hlavné mesto demograficky odčerpáva ostatné územie, hlavne regióny."
   let footnote = "Projekcia populácie (v %) pre bratislavský metropolitný región a Slovenskú republiku, Zdroj: Eurostat";
 
   //Width, height and margins

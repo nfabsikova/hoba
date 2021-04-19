@@ -2,9 +2,11 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
 
     // *** CHART SETTINGS ***
 
+    let footnote = "Ohrozenie horúčavami podľa štvorcov 1x1km Zdroj: USGS/NASA Landsat 8 Program, 2018. Spracoval: Útvar hlavnej architektky, Hlavné mesto SR Bratislava 2020.";
+
     //Width and Height
     let width = 800;
-    let height = 600;
+    let height = 700;
     let marginBottom = 60;
 
     //Colors
@@ -16,7 +18,7 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
                 .range(["#ffffff", "#fdf0ec", "#f9dfd9", "#f7d0c7", "#f4beb5", "#ef9c91", "#e8776f", "#e14e51"]);
 
     //Define legend keys and position
-    let lgKeys = ["22-25°C", "25-28°C", "28-31°C", "31-34°C", "34-37°C", "37-40°C", "40-49°C"].reverse();
+    let lgKeys = ["22–25°C", "25–28°C", "28–31°C", "31–34°C", "34–37°C", "37–40°C", "40–49°C"].reverse();
     let lgColors = ["#fdf0ec", "#f9dfd9", "#f7d0c7", "#f4beb5", "#ef9c91", "#e8776f", "#e14e51"].reverse();
     let lgTop = height * 0.5;
     let lgLeft = width * 0.12;
@@ -38,23 +40,19 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
     let tooltip = d3.select("#chart13_container").append("div").attr("id", "tooltip13").attr("class", "hidden");
     tooltip.append("p").append("span").attr("id", "value13").attr("class", "numbers").text(100);
 
-
-//     <div id="tooltip13" class="hidden">
-//     <p><span id="value13" class="numbers">100</span>°C</p>
-// </div>
-// </div>
-// <hr>
-// <p class="footnote">Ohrozenie horúčavami podľa štvorcov 1x1km Zdroj: USGS/NASA Landsat 8 Program, 2018. Spracoval: Útvar hlavnej architektky, Hlavné mesto SR Bratislava 2020.</p>
-
+    //Create footnote
+    d3.select("#chart13").append("hr");
+    d3.select("#chart13").append("p").attr("class", "footnote").text(footnote)
 
     //Load forrest area
     Promise.all([
-      d3.json("./data/lesy.geojson")
+      d3.json("./data/lesy.geojson"),
+      d3.json("./data/chart-13-labels.geojson")
     ]).then(updateChart)
 
-    function updateChart(lesy) {
-      console.log(lesy[0]);
+    function updateChart([lesy, labels]) {
     //Define projection and path generator
+
     let projection = d3.geoMercator().fitSize([width, height - marginBottom], ba);
 
     let path = d3.geoPath().projection(projection);
@@ -179,13 +177,41 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
           chart.append("g")
               .attr("class", "lesy")
               .selectAll("path")
-              .data(lesy[0].features)
+              .data(lesy.features)
               .enter()
               .append("path")
               .attr("d", path)
               .attr("pointer-events", "none")
               .style("fill", "url('#hash')")
               .style("stroke", "#7e739e");
+
+
+          //Add labels
+          let labelCircles = chart.append("g")
+              .attr("class", "labelCircles")
+              .selectAll("circle")
+              .data(labels.features)
+              .enter()
+              .append("circle")
+              .attr("cx", d => projection(d.geometry.coordinates)[0])
+              .attr("cy", d => projection(d.geometry.coordinates)[1])
+              .attr("r", 9)
+              .attr("fill", "#241b58");
+
+              chart.append("g")
+              .attr("class", "labelText")
+              .selectAll("text")
+              .data(labels.features)
+              .enter()
+              .append("text")
+              .attr("x", d => projection(d.geometry.coordinates)[0] - 3.5)
+              .attr("y", d => projection(d.geometry.coordinates)[1] + 3)
+              .text((d, i) => i + 1)
+              .attr("pointer-events", "none")
+              .style("fill", "white")
+              .style("font-size", "12px");
+
+
 
           //Add legend
           let legend = chart.append("g")
@@ -220,6 +246,25 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
               .attr("x", lgLeft + 25)
               .attr("y", (d,i) => lgTop + (i+1)*lgHeight + 2) 
               .text(d => d)
+              .style("font-size", "12px")
+              .attr("pointer-events", "none")
+              .style("alignment-baseline", "hanging"); 
+
+          legend.append("rect")
+              .attr("x", lgLeft)
+              .attr("y", lgTop + ((lgKeys.length + 2) * lgHeight))
+              .attr("width", 14)
+              .attr("height", 14)
+              .attr("rx", 1.5)
+              .attr("ry", 1.5)
+              .style("fill", "url('#hash')")
+              .style("stroke", "#7e739e");
+
+          legend.append("text")
+              .attr("class", "numbers")
+              .attr("x", lgLeft + 25)
+              .attr("y", lgTop + ((lgKeys.length + 2) * lgHeight)) 
+              .text("lesy")
               .style("font-size", "12px")
               .attr("pointer-events", "none")
               .style("alignment-baseline", "hanging"); 
@@ -269,6 +314,27 @@ export function makeChart13(mc, ba, grid, gridBg, danube, danubeLine) {
             //Delete the outline
             chart.selectAll(".temp").remove()
             
+       })
+
+       labelCircles.on("mouseover", function(event, d) {
+         console.log(d.properties.popis);
+
+        //Update the tooltip position and value
+        d3.select("#tooltip13")
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", event.pageY + "px")				
+        .select("#value13")
+        .attr("class", "numbers")
+        .text(d.properties.popis);
+
+        //Show the tooltip
+        d3.select("#tooltip13").classed("hidden", false);
+
+       }).on("mouseout", function() {
+         
+        //Hide the tooltip
+        d3.select("#tooltip13").classed("hidden", true);
+
        })
 
 

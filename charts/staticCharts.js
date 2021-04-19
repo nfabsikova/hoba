@@ -1,6 +1,6 @@
 export function makeChart5() {
 
-  let headline = "Skoro tretina SIM kariet prítomných v Braslave počas dňa prichádza z mimo mesta.";
+  let headline = "Skoro tretina SIM kariet prítomných v Braslave počas dňa prichádza spoza hraníc mesta.";
 
   // Create all chart sections
 
@@ -46,10 +46,4 @@ export function makeStaticChart(chartNumber, chartWidth) {
     .attr("width", chartWidth + "px");
 }
 
-
-
-
-{/* <hr class="headline">
-<h3>V ostatných desiatich rokoch si Staré Mesto v porovnaní s ostatnými mestskými časťami vedie stále lepšie</h3>
-<object type="image/svg+xml" data="./charts/chart-11.svg" width="800px"></object> */}
 

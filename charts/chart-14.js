@@ -6,7 +6,7 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
 
   //Width and Height
   let width = 800;
-  let height = 600;
+  let height = 700;
   let marginBottom = 60;
 
   //Colors
@@ -18,7 +18,7 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
               .range(["#ffffff", "#e0dfeb", "#d5d1df", "#7e739e", "#52467d", "#282254"]);
 
   //Define legend keys and position
-  let lgKeys = ["1-10 / km²", "10-40 / km²", "40-70 / km²", "70-100 / km²", "viac ako 100 budov / km²"].reverse();
+  let lgKeys = ["1–10 / km²", "10–40 / km²", "40–70 / km²", "70–100 / km²", "viac ako 100 budov / km²"].reverse();
   let lgColors = ["#e0dfeb", "#d5d1df", "#7e739e", "#52467d", "#282254"].reverse();
   let lgTop = height * 0.6;
   let lgLeft = width * 0.12;

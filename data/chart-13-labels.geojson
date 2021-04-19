@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "chart-13-labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "x": 16.98142, "y": 48.23231, "popis": "Vysoká koncentrácia zastavanosti, spevnené plochy a fabrika s mnohými výrobnými halami je zdrojom sekundárneho tepla. V okolí je poľnohospodárske pôda, ktorá prostredie nedostatočne ochladzuje." }, "geometry": { "type": "Point", "coordinates": [ 16.98150, 48.23300 ] } },
+{ "type": "Feature", "properties": { "id": 2, "x": 17.15761, "y": 48.1849, "popis": "Stará Vajnorská a Vajnorská je oblasťou s množstvom skladových priestorov a výrobných hál, s minimálnym podielom zelene." }, "geometry": { "type": "Point", "coordinates": [ 17.15762, 48.1854 ] } },
+{ "type": "Feature", "properties": { "id": 3, "x": 17.08434, "y": 48.19415, "popis": "Mestské lesy a Malé Karpaty veľkou mierou ovplyvňujú počasie na území mesta. V menšom merítku zlepšujú mikroklímu obyvateľov na okrajoch mestských častí (Lamač, Nové Mesto, Rača, Záhorská Bystrica, Devín a Dúbravka)." }, "geometry": { "type": "Point", "coordinates": [ 17.08434, 48.19500 ] } },
+{ "type": "Feature", "properties": { "id": 4, "x": 17.155, "y": 48.07655, "popis": "Dunaj a lužné lesy pretínajú mesto najmä v jeho juhovýchodnej časti a na rozdiel od poľnohospodárskej pôdy sa toto prostredie neprehrieva." }, "geometry": { "type": "Point", "coordinates": [ 17.155, 48.07655 ] } }
+]
+}

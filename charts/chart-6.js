@@ -18,7 +18,7 @@ export function makeChart6() {
   let colors = ["#241b58", "#eb897f", "#d4d4d4", "#f4f4f4", "#808285"]
 
   //Define legend keys and position
-  let keys = ["0-250", "250-500", "500-1500", "1500-2250", "2250-3500", "3500-11602"];
+  let keys = ["0–250", "250–500", "500–1500", "1500–2250", "2250–3500", "3500–11602"];
   let lgColors = ["#e2dfeb", "#b9b3cc", "#958bb1", "#7e739e", "#53487c", "#241a57"];
   let lgTop = mapHeight * 0.02;
   let lgLeft = mapWidth * 0.68;
@@ -318,7 +318,7 @@ export function makeChart6() {
           .attr("pointer-events", "none")
           .append("xhtml:h3")
               .style("text-anchor", "start")
-              .html("<h3>138 557 SIM kariet denne<br>prichádza do Bratislavy<br>z Bratislavského a Trnavského<br>kraja, 57 953 z nich pochádza<br>zo 14 miest.</h3>")
+              .html("<h3>138 557 SIM kariet denne<br>prichádza do Bratislavy<br>z Bratislavského a Trnavského<br>kraja, 57 953 z nich pochádza<br>zo 14 lokalít.</h3>")
               .style("font-size", "16px")
 
       header.append("line")

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 204 207" style="enable-background:new 0 0 204 207;" xml:space="preserve">
+	 viewBox="0 0 273.5 207" style="enable-background:new 0 0 273.5 207;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#E14E50;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
 	.st1{fill:#EB897F;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
-	.Year_x0020_line_x0020_2{fill:none;stroke:#D4D4D4;stroke-width:0.4;stroke-miterlimit:10;}
 	.st2{fill:#F4F4F4;}
 	.st3{fill:#D4D4D4;}
 	.st4{font-family:'RealTextPro-Regular';}
@@ -14,96 +13,30 @@
 	.st7{fill:none;stroke:#EB897F;stroke-width:0.4;stroke-miterlimit:10;}
 	.st8{fill:#F8D0C8;}
 	.st9{fill:none;stroke:#D9D9D9;stroke-width:0.3987;stroke-miterlimit:10;}
-	.st10{fill:#878787;}
-	.st11{fill:#E14E50;}
-	.st12{font-family:'RealTextPro-Bold';}
-	.st13{fill:#EB897F;}
-	.st14{fill:none;stroke:#878787;stroke-width:0.75;}
+	.st10{fill:none;}
+	.st11{fill:#878787;}
+	.st12{fill:#E14E50;}
+	.st13{font-family:'RealTextPro-Bold';}
+	.st14{fill:#EB897F;}
+	.st15{fill:none;stroke:#878787;stroke-width:0.75;}
 </style>
-<font horiz-adv-x="1000">
-<!-- Copyright (c) 2015-2017 Monotype GmbH. All rights reserved. -->
-<!-- Copyright: Copyright 2021 Adobe System Incorporated. All rights reserved. -->
-<font-face font-family="RealTextPro-Bold" units-per-em="1000" underline-position="-123" underline-thickness="138"/>
-<missing-glyph horiz-adv-x="600" d="M531,700l-462,0l0,-866l462,0M393,568l0,-602l-186,0l0,602z"/>
-<glyph unicode="C" horiz-adv-x="749" d="M385,718C206,718 39,608 39,351C39,89 206,-18 383,-18C533,-18 661,56 717,199l-167,50C520,170 474,127 389,127C280,127 221,210 221,352C221,494 284,573 386,573C461,573 503,538 532,467l170,43C643,663 519,718 385,718z"/>
-<glyph unicode="," horiz-adv-x="314" d="M155,193C94,193 51,149 51,99C51,55 71,32 103,10C98,-46 81,-83 52,-129l86,-47C210,-104 262,-11 262,84C262,147 219,193 155,193z"/>
-<glyph unicode="&#xB0;" horiz-adv-x="600" d="M270,717C169,717 69,646 69,528C69,410 169,339 270,339C373,339 471,409 471,527C471,645 373,717 270,717M270,614C308,614 344,586 344,527C344,468 308,441 270,441C233,441 196,468 196,528C196,588 233,614 270,614z"/>
-<glyph unicode="8" horiz-adv-x="622" d="M309,697C137,697 60,601 60,515C60,455 79,407 146,362C75,332 22,277 22,188C22,95 102,-14 309,-14C530,-14 600,102 600,193C600,293 533,350 464,376C522,402 565,442 565,514C565,603 481,697 309,697M309,573C365,573 395,538 395,504C395,475 380,445 342,417l-34,11C254,445 231,466 231,504C231,545 262,573 309,573M261,311l48,-17C374,272 423,256 423,199C423,159 391,114 310,114C242,114 199,152 199,204C199,254 225,284 261,311z"/>
-<glyph unicode="5" horiz-adv-x="591" d="M530,583l-436,0l-51,-390l147,-22C213,206 245,227 290,227C355,227 393,187 393,112C393,38 356,-17 286,-17C229,-17 190,12 173,71l-154,-44C51,-67 139,-149 285,-149C469,-149 570,-33 570,126C570,277 466,363 355,363C300,363 254,348 215,310l17,140l279,0z"/>
-<glyph unicode="4" horiz-adv-x="626" d="M350,-130l167,0l0,130l84,0l0,132l-84,0l0,451l-219,0l-273,-449l0,-134l325,0M188,132l161,281l0,-281z"/>
-<glyph unicode="9" horiz-adv-x="611" d="M301,601C155,601 34,510 34,353C34,197 140,115 251,115C321,115 370,139 413,190C404,51 359,-19 285,-19C229,-19 197,6 174,59l-143,-61C73,-90 157,-149 289,-149C482,-149 584,-10 584,264C584,508 461,601 301,601M306,470C361,470 397,432 397,360C397,291 359,246 303,246C240,246 209,295 209,358C209,430 248,470 306,470z"/>
-<glyph unicode="+" horiz-adv-x="600" d="M380,511l-160,0l0,-154l-142,0l0,-132l142,0l0,-153l160,0l0,153l142,0l0,132l-142,0z"/>
-<glyph unicode="3" horiz-adv-x="575" d="M289,601C149,601 51,526 22,408l152,-25C190,446 227,471 277,471C321,471 361,449 361,390C361,318 311,300 265,300l-57,0l0,-118l70,0C340,182 381,146 381,83C381,16 336,-16 279,-16C217,-16 178,17 163,85l-151,-36C42,-73 142,-149 286,-149C440,-149 552,-63 552,76C552,180 484,237 401,248C480,265 530,325 530,409C530,515 446,601 289,601z"/>
-<glyph unicode="2" horiz-adv-x="573" d="M294,601C128,601 37,491 33,368l168,0C201,428 230,470 287,470C331,470 358,442 358,398C358,321 289,272 35,129l0,-129l506,0l0,133l-250,0C456,217 538,281 538,406C538,521 436,601 294,601z"/>
-<glyph unicode="0" horiz-adv-x="652" d="M326,601C142,601 27,478 27,292C27,102 142,-14 326,-14C511,-14 625,102 625,292C625,478 511,601 326,601M326,469C406,469 449,400 449,292C449,178 406,118 326,118C246,118 203,181 203,292C203,401 246,469 326,469z"/>
-</font>
-
-	<font horiz-adv-x="1000">
-<!-- Copyright (c) 2015-2017 Monotype GmbH. All rights reserved. -->
-<!-- Copyright: Copyright 2021 Adobe System Incorporated. All rights reserved. -->
-<font-face font-family="RealTextPro-Regular" units-per-em="1000" underline-position="-106" underline-thickness="89"/>
-<missing-glyph horiz-adv-x="600" d="M531,700l-462,0l0,-862l462,0M429,610l0,-682l-258,0l0,682z"/>
-<glyph unicode="C" horiz-adv-x="725" d="M377,716C217,716 56,615 56,351C56,71 234,-16 376,-16C502,-16 624,49 674,193l-99,33C544,130 482,76 376,76C233,76 162,184 162,352C162,522 243,624 376,624C470,624 528,577 559,490l102,29C607,670 484,716 377,716z"/>
-<glyph unicode="P" horiz-adv-x="627" d="M335,700l-249,0l0,-700l102,0l0,254l150,0C505,254 585,352 585,480C585,591 512,700 335,700M345,342l-157,0l0,268l159,0C429,610 479,556 479,479C479,377 415,342 345,342z"/>
-<glyph unicode="S" horiz-adv-x="651" d="M324,-18C509,-18 600,75 600,195C600,313 530,378 362,407C200,435 170,464 170,523C170,590 228,628 318,628C433,628 487,572 514,533l78,58C541,659 453,718 318,718C168,718 66,640 66,519C66,411 143,348 293,324C463,297 494,259 494,190C494,117 420,72 326,72C224,72 156,115 104,177l-73,-62C103,20 218,-18 324,-18z"/>
-<glyph unicode="a" horiz-adv-x="561" d="M280,536C154,536 70,485 67,371l97,0C166,433 200,457 277,457C362,457 384,434 384,364l0,-28l-130,-16C107,302 46,240 46,147C46,54 111,-14 224,-14C279,-14 344,4 385,57C387,38 391,18 398,0l104,0C487,36 484,74 484,114l0,257C484,475 429,536 280,536M384,261l0,-65C384,121 317,72 243,72C176,72 150,106 150,153C150,210 189,236 283,248z"/>
-<glyph unicode="b" horiz-adv-x="616" d="M181,700l-100,0l0,-700l100,0l0,62C213,13 264,-14 339,-14C476,-14 564,110 564,260C564,427 474,536 338,536C281,536 222,512 181,460M323,450C410,450 460,379 460,258C460,142 402,72 318,72C241,72 177,132 177,258C177,389 237,450 323,450z"/>
-<glyph unicode="c" horiz-adv-x="570" d="M302,536C147,536 51,421 51,261C51,103 142,-14 303,-14C419,-14 495,51 533,138l-88,38C422,120 387,72 307,72C213,72 155,141 155,263C155,383 217,450 307,450C368,450 412,418 435,364l87,36C487,480 409,536 302,536z"/>
-<glyph unicode="&#x10D;" horiz-adv-x="570" d="M489,730l-96,0l-88,-76l-88,76l-96,0l135,-138l98,0M302,536C147,536 51,421 51,261C51,103 142,-14 303,-14C419,-14 495,51 533,138l-88,38C422,120 387,72 307,72C213,72 155,141 155,263C155,383 217,450 307,450C368,450 412,418 435,364l87,36C487,480 409,536 302,536z"/>
-<glyph unicode="d" horiz-adv-x="616" d="M534,700l-100,0l0,-237C401,509 352,536 282,536C142,536 51,420 51,260C51,98 140,-14 280,-14C332,-14 394,6 434,63l0,-63l100,0M299,450C376,450 438,388 438,262C438,132 381,72 299,72C205,72 155,140 155,262C155,381 209,450 299,450z"/>
-<glyph unicode="&#xB0;" horiz-adv-x="600" d="M250,712C156,712 62,647 62,533C62,419 156,353 250,353C345,353 436,418 436,532C436,646 345,712 250,712M250,637C296,637 345,605 345,532C345,459 296,428 250,428C204,428 155,460 155,533C155,607 204,637 250,637z"/>
-<glyph unicode="e" horiz-adv-x="579" d="M296,536C135,536 51,421 51,263C51,107 141,-14 303,-14C406,-14 480,30 526,106l-83,44C419,105 373,71 306,71C211,71 157,130 154,240l377,0l0,23C531,416 448,536 296,536M295,453C372,453 420,406 427,317l-272,0C163,403 213,453 295,453z"/>
-<glyph unicode="&#xE9;" horiz-adv-x="579" d="M470,731l-133,0l-90,-138l87,0M296,536C135,536 51,421 51,263C51,107 141,-14 303,-14C406,-14 480,30 526,106l-83,44C419,105 373,71 306,71C211,71 157,130 154,240l377,0l0,23C531,416 448,536 296,536M295,453C372,453 420,406 427,317l-272,0C163,403 213,453 295,453z"/>
-<glyph unicode="&#x2013;" horiz-adv-x="520" d="M470,347l-420,0l0,-89l420,0z"/>
-<glyph unicode="5" horiz-adv-x="588" d="M510,574l-393,0l-48,-358l87,-12C190,254 236,279 298,279C386,279 443,223 443,121C443,15 388,-63 290,-63C210,-63 152,-13 136,42l-90,-27C69,-56 146,-146 287,-146C450,-146 545,-35 545,130C545,270 439,363 322,363C275,363 221,351 173,306l24,183l299,0z"/>
-<glyph unicode="4" horiz-adv-x="609" d="M374,-130l98,0l0,130l112,0l0,84l-112,0l0,490l-124,0l-303,-486l0,-88l329,0M148,84l226,374l0,-374z"/>
-<glyph unicode="h" horiz-adv-x="591" d="M181,700l-100,0l0,-700l100,0l0,297C181,387 238,450 313,450C395,450 414,391 414,310l0,-310l100,0l0,335C514,460 451,536 334,536C276,536 221,512 181,458z"/>
-<glyph unicode="i" horiz-adv-x="263" d="M131,747C96,747 65,717 65,682C65,647 96,617 131,617C166,617 197,647 197,682C197,717 166,747 131,747M181,522l-100,0l0,-522l100,0z"/>
-<glyph unicode="&#xED;" horiz-adv-x="263" d="M305,731l-133,0l-90,-138l87,0M181,522l-100,0l0,-522l100,0z"/>
-<glyph unicode="j" horiz-adv-x="263" d="M131,747C96,747 65,717 65,682C65,647 96,617 131,617C166,617 197,647 197,682C197,717 166,747 131,747M181,522l-100,0l0,-516C81,-78 64,-95 1,-95C-5,-95 -9,-95 -21,-94l0,-80C-4,-178 14,-180 36,-180C109,-180 181,-137 181,-27z"/>
-<glyph unicode="k" horiz-adv-x="565" d="M181,700l-100,0l0,-700l100,0l0,175l85,81l166,-256l116,0l-213,322l208,200l-125,0l-237,-231z"/>
-<glyph unicode="l" horiz-adv-x="282" d="M176,700l-100,0l0,-582C76,32 118,-9 191,-9C211,-9 229,-7 246,-3l0,81C234,77 228,77 222,77C178,77 176,89 176,136z"/>
-<glyph unicode="m" horiz-adv-x="885" d="M636,536C575,536 510,512 470,448C444,504 395,536 322,536C267,536 218,513 181,462l0,60l-100,0l0,-522l100,0l0,296C181,387 232,450 303,450C382,450 395,391 395,281l0,-281l100,0l0,296C495,387 546,450 617,450C696,450 709,391 709,281l0,-281l100,0l0,335C809,460 752,536 636,536z"/>
-<glyph unicode="n" horiz-adv-x="591" d="M334,536C277,536 221,512 181,454l0,68l-100,0l0,-522l100,0l0,297C181,387 238,450 313,450C395,450 414,391 414,301l0,-301l100,0l0,335C514,460 451,536 334,536z"/>
-<glyph unicode="9" horiz-adv-x="583" d="M288,592C146,592 43,497 43,352C43,210 141,113 266,113C330,113 400,141 442,207C437,63 390,-64 272,-64C199,-64 158,-28 130,24l-85,-37C88,-98 162,-146 271,-146C443,-146 539,-15 539,263C539,503 427,592 288,592M289,507C366,507 427,456 427,352C427,268 371,198 286,198C190,198 145,272 145,352C145,454 210,507 289,507z"/>
-<glyph unicode="o" horiz-adv-x="610" d="M305,536C148,536 51,421 51,261C51,103 146,-14 305,-14C466,-14 558,99 558,261C558,416 460,536 305,536M305,450C395,450 455,382 455,263C455,141 399,72 305,72C211,72 155,141 155,263C155,382 215,450 305,450z"/>
-<glyph unicode="1" horiz-adv-x="479" d="M61,0l402,0l0,84l-141,0l0,490l-76,0C232,493 203,433 83,433l-27,0l0,-77l166,0l0,-272l-161,0z"/>
-<glyph unicode="p" horiz-adv-x="614" d="M335,536C280,536 222,515 180,462l0,60l-99,0l0,-684l99,0l0,223C212,13 267,-14 334,-14C478,-14 562,111 562,264C562,424 472,536 335,536M318,450C410,450 459,377 459,264C459,140 400,72 317,72C240,72 177,130 177,262C177,388 238,450 318,450z"/>
-<glyph unicode="(" horiz-adv-x="281" d="M257,780l-77,0C96,632 44,465 44,303C44,141 96,-25 180,-173l77,0C187,-11 150,108 150,303C150,498 187,618 257,780z"/>
-<glyph unicode=")" horiz-adv-x="281" d="M24,780C94,618 131,498 131,303C131,108 94,-11 24,-173l77,0C185,-25 237,141 237,303C237,465 185,632 101,780z"/>
-<glyph unicode="+" horiz-adv-x="600" d="M349,493l-98,0l0,-156l-151,0l0,-89l151,0l0,-156l98,0l0,156l151,0l0,89l-151,0z"/>
-<glyph unicode="r" horiz-adv-x="388" d="M328,536C271,536 216,501 181,435l0,87l-100,0l0,-522l100,0l0,242C181,388 246,431 330,431C337,431 346,431 361,430l0,104C352,535 338,536 328,536z"/>
-<glyph unicode="s" horiz-adv-x="527" d="M265,536C143,536 59,478 59,381C59,299 115,248 237,229C362,210 384,188 384,145C384,100 345,71 260,71C192,71 131,97 91,142l-65,-64C77,21 159,-14 262,-14C408,-14 486,54 486,150C486,251 418,291 291,311C189,327 159,342 159,385C159,427 197,453 265,453C324,453 376,431 414,395l60,61C426,504 359,536 265,536z"/>
-<glyph unicode="6" horiz-adv-x="588" d="M312,696C155,696 49,556 49,312C49,81 161,-14 302,-14C441,-14 541,83 541,221C541,365 447,454 319,454C255,454 190,425 148,361C157,516 215,616 313,616C379,616 417,575 435,525l89,29C487,642 419,696 312,696M300,371C393,371 441,304 441,221C441,125 382,69 300,69C218,69 158,132 158,220C158,306 213,371 300,371z"/>
-<glyph unicode=" " horiz-adv-x="221"/>
-<glyph unicode="t" horiz-adv-x="373" d="M198,660l-100,0l0,-138l-72,0l0,-77l72,0l0,-321C98,43 136,-14 245,-14C286,-14 320,-6 347,2l0,82C326,78 295,71 265,71C215,71 198,93 198,138l0,307l136,0l0,77l-136,0z"/>
-<glyph unicode="2" horiz-adv-x="571" d="M293,592C139,592 63,486 59,382l102,0C161,450 207,509 293,509C357,509 403,473 403,404C403,314 336,252 60,82l0,-82l456,0l0,84l-308,0C433,207 508,288 508,410C508,513 428,592 293,592z"/>
-<glyph unicode="u" horiz-adv-x="585" d="M503,522l-100,0l0,-302C403,127 347,74 273,74C204,74 176,107 176,188l0,334l-100,0l0,-356C76,46 145,-14 253,-14C308,-14 366,12 403,61l0,-61l100,0z"/>
-<glyph unicode="v" horiz-adv-x="510" d="M493,522l-103,0l-134,-422l-131,422l-108,0l179,-522l117,0z"/>
-<glyph unicode="y" horiz-adv-x="510" d="M493,522l-103,0l-127,-444l-138,444l-108,0l178,-522l34,0C210,-69 194,-97 119,-97C103,-97 96,-97 77,-95l0,-79C94,-178 116,-180 137,-180C252,-180 290,-122 318,-34z"/>
-<glyph unicode="&#xFD;" horiz-adv-x="510" d="M429,731l-133,0l-90,-138l87,0M493,522l-103,0l-127,-444l-138,444l-108,0l178,-522l34,0C210,-69 194,-97 119,-97C103,-97 96,-97 77,-95l0,-79C94,-178 116,-180 137,-180C252,-180 290,-122 318,-34z"/>
-<glyph unicode="z" horiz-adv-x="481" d="M441,522l-380,0l0,-84l258,0l-288,-362l0,-76l413,0l0,86l-287,0l284,357z"/>
-<glyph unicode="&#x17E;" horiz-adv-x="481" d="M435,730l-96,0l-88,-76l-88,76l-96,0l135,-138l98,0M441,522l-380,0l0,-84l258,0l-288,-362l0,-76l413,0l0,86l-287,0l284,357z"/>
-<glyph unicode="0" horiz-adv-x="609" d="M305,592C145,592 34,473 34,285C34,97 145,-14 305,-14C464,-14 575,97 575,285C575,473 464,592 305,592M305,508C407,508 472,422 472,285C472,146 407,70 305,70C201,70 136,149 136,285C136,423 201,508 305,508z"/>
-</font>
-
-	<symbol  id="Point_red" viewBox="-3 -3 6 6">
+<symbol  id="Point_red" viewBox="-3 -3 6.1 6.1">
 	<g>
 		<g>
 			<g>
 				<g>
-					<path class="st0" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6C1.4,2.6,2.6,1.4,2.6,0z"/>
+					<path class="st0" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6S2.6,1.4,2.6,0z"/>
 				</g>
 			</g>
 		</g>
 	</g>
 </symbol>
-<symbol  id="Point_red_mid" viewBox="-3 -3 6 6">
+<symbol  id="Point_red_mid" viewBox="-3 -3 6.1 6.1">
 	<g>
 		<g>
 			<g>
 				<g>
-					<path class="st1" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6C1.4,2.6,2.6,1.4,2.6,0z"/>
+					<path class="st1" d="M2.6,0c0-1.4-1.1-2.6-2.6-2.6c-1.4,0-2.6,1.1-2.6,2.6S-1.4,2.6,0,2.6S2.6,1.4,2.6,0z"/>
 				</g>
 			</g>
 		</g>
@@ -116,8 +49,12 @@
 		<rect x="0.1" y="14.8" class="st2" width="121.3" height="18.3"/>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 0.1069 89.71)"><tspan x="0" y="0" class="st3 st4 st5">+2</tspan><tspan x="7.8" y="0" class="st3 st4 st5"> </tspan><tspan x="8.8" y="0" class="st3 st4 st5">°C</tspan></text>
-		<text transform="matrix(1 0 0 1 0.1069 33.1448)"><tspan x="0" y="0" class="st3 st4 st5">+4</tspan><tspan x="7.8" y="0" class="st3 st4 st5"> </tspan><tspan x="8.8" y="0" class="st3 st4 st5">°C</tspan></text>
+		<text transform="matrix(1 0 0 1 0.1069 89.71)" class="st3 st4 st5">+2</text>
+		<text transform="matrix(1 0 0 1 7.9069 89.71)" class="st3 st4 st5"> </text>
+		<text transform="matrix(1 0 0 1 8.9069 89.71)" class="st3 st4 st5">°C</text>
+		<text transform="matrix(1 0 0 1 0.1069 33.1448)" class="st3 st4 st5">+4</text>
+		<text transform="matrix(1 0 0 1 7.9069 33.1448)" class="st3 st4 st5"> </text>
+		<text transform="matrix(1 0 0 1 8.9069 33.1448)" class="st3 st4 st5">°C</text>
 	</g>
 	<polyline class="st6" points="0.1,146.6 46.9,120.8 84.5,75.7 121.4,33.1 	"/>
 	<polyline class="st7" points="0.1,146.6 46.9,124 84.5,89.8 121.4,47.3 	"/>
@@ -130,54 +67,127 @@
 				<line class="st9" x1="121.6" y1="14.8" x2="121.6" y2="47.3"/>
 			</g>
 			<g>
-				<line class="Year_x0020_line_x0020_2" x1="46.9" y1="14.8" x2="46.9" y2="123.9"/>
-				<line class="Year_x0020_line_x0020_2" x1="84.5" y1="14.8" x2="84.5" y2="89.9"/>
-				<line class="Year_x0020_line_x0020_2" x1="121.6" y1="14.8" x2="121.6" y2="47.3"/>
+				<line class="st10" x1="46.9" y1="14.8" x2="46.9" y2="123.9"/>
+				<line class="st10" x1="84.5" y1="14.8" x2="84.5" y2="89.9"/>
+				<line class="st10" x1="121.6" y1="14.8" x2="121.6" y2="47.3"/>
 			</g>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 84.5259 10.1682)" class="st10 st4 st5">2050</text>
+			<text transform="matrix(1 0 0 1 84.5259 10.1682)" class="st11 st4 st5">2050</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 121.603 10.168)" class="st10 st4 st5">2100</text>
+			<text transform="matrix(1 0 0 1 121.603 10.168)" class="st11 st4 st5">2100</text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 47.1362 10.1682)" class="st10 st4 st5">2025</text>
+			<text transform="matrix(1 0 0 1 47.1362 10.1682)" class="st11 st4 st5">2025</text>
 		</g>
 	</g>
-	
-		<use xlink:href="#Point_red_mid"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 84.5252 89.838)" style="overflow:visible;"/>
-	
-		<use xlink:href="#Point_red_mid"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 121.6025 47.3183)" style="overflow:visible;"/>
-	
-		<use xlink:href="#Point_red"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 121.6025 33.1451)" style="overflow:visible;"/>
-	
-		<use xlink:href="#Point_red"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 84.5252 75.6648)" style="overflow:visible;"/>
-	
-		<use xlink:href="#Point_red_mid"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 46.8791 123.8538)" style="overflow:visible;"/>
-	
-		<use xlink:href="#Point_red"  width="6" height="6" x="-3" y="-3" transform="matrix(1 0 0 -1 46.8791 121.0191)" style="overflow:visible;"/>
 	<g>
-		<text transform="matrix(1 0 0 1 18.1626 122.7756)"><tspan x="0" y="0" class="st11 st12 st5">+0,9</tspan><tspan x="13.7" y="0" class="st11 st12 st5"> </tspan><tspan x="14.7" y="0" class="st11 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_1_" x="81.5" y="86.8" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_2_);">
+			
+				<use xlink:href="#Point_red_mid"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 84.5252 89.838)" style="overflow:visible;"/>
+		</g>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 50.3022 128.4504)"><tspan x="0" y="0" class="st13 st12 st5">+0,8</tspan><tspan x="13.7" y="0" class="st13 st12 st5"> </tspan><tspan x="14.7" y="0" class="st13 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_3_" x="118.6" y="44.3" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_4_);">
+			
+				<use xlink:href="#Point_red_mid"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 121.6025 47.3183)" style="overflow:visible;"/>
+		</g>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 54.917 77.5251)"><tspan x="0" y="0" class="st11 st12 st5">+2,5</tspan><tspan x="13.7" y="0" class="st11 st12 st5"> </tspan><tspan x="14.7" y="0" class="st11 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_5_" x="118.6" y="30.1" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_6_);">
+			
+				<use xlink:href="#Point_red"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 121.6025 33.1451)" style="overflow:visible;"/>
+		</g>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 89.2358 91.7849)"><tspan x="0" y="0" class="st13 st12 st5">+2</tspan><tspan x="7.8" y="0" class="st13 st12 st5"> </tspan><tspan x="8.8" y="0" class="st13 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_7_" x="81.5" y="72.7" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_8_);">
+			
+				<use xlink:href="#Point_red"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 84.5252 75.6648)" style="overflow:visible;"/>
+		</g>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 125.4644 35.1604)"><tspan x="0" y="0" class="st11 st12 st5">+4</tspan><tspan x="7.8" y="0" class="st11 st12 st5"> </tspan><tspan x="8.8" y="0" class="st11 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_9_" x="43.9" y="120.9" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_10_">
+			<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_10_);">
+			
+				<use xlink:href="#Point_red_mid"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 46.8791 123.8538)" style="overflow:visible;"/>
+		</g>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 124.8599 50.1638)"><tspan x="0" y="0" class="st13 st12 st5">+3,5</tspan><tspan x="13.7" y="0" class="st13 st12 st5"> </tspan><tspan x="14.7" y="0" class="st13 st12 st5">°C</tspan></text>
+		<defs>
+			<rect id="SVGID_11_" x="43.9" y="118" width="6" height="6"/>
+		</defs>
+		<clipPath id="SVGID_12_">
+			<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_12_);">
+			
+				<use xlink:href="#Point_red"  width="6.1" height="6.1" x="-3" y="-3" transform="matrix(1 0 0 -1 46.8791 121.0191)" style="overflow:visible;"/>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 18.1626 122.7756)" class="st12 st13 st5">+0,9</text>
+		<text transform="matrix(1 0 0 1 31.8626 122.7756)" class="st12 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 32.8626 122.7756)" class="st12 st13 st5">°C</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 50.3022 128.4504)" class="st14 st13 st5">+0,8</text>
+		<text transform="matrix(1 0 0 1 64.0022 128.4504)" class="st14 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 65.0022 128.4504)" class="st14 st13 st5">°C</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 54.917 77.5251)" class="st12 st13 st5">+2,5</text>
+		<text transform="matrix(1 0 0 1 68.617 77.5251)" class="st12 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 69.617 77.5251)" class="st12 st13 st5">°C</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 89.2358 91.7849)" class="st14 st13 st5">+2</text>
+		<text transform="matrix(1 0 0 1 97.0358 91.7849)" class="st14 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 98.0358 91.7849)" class="st14 st13 st5">°C</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 125.4644 35.1604)" class="st12 st13 st5">+4</text>
+		<text transform="matrix(1 0 0 1 133.2644 35.1604)" class="st12 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 134.2644 35.1604)" class="st12 st13 st5">°C</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 124.8599 50.1638)" class="st14 st13 st5">+3,5</text>
+		<text transform="matrix(1 0 0 1 138.5599 50.1638)" class="st14 st13 st5"> </text>
+		<text transform="matrix(1 0 0 1 139.5599 50.1638)" class="st14 st13 st5">°C</text>
 	</g>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 0.1074 183.4585)"><tspan x="0" y="0" class="st10 st4 st5">Predpokladaný ročný priemer teploty vzduchu v oblasti južného</tspan><tspan x="0" y="11" class="st10 st4 st5">Slovenska v rokoch 2025–2100 (v porovnaní s obdobím 1961–1990)</tspan></text>
+	<text transform="matrix(1 0 0 1 0.1074 183.4585)" class="st11 st4 st5">Interval predpokladaného rozdielu v ročnom priemere teploty vzduchu v oblasti </text>
+	<text transform="matrix(1 0 0 1 0.1074 194.4585)" class="st11 st4 st5">južného Slovenska v rokoch 2025–2100 (v porovnaní s obdobím 1961–1990)</text>
 </g>
-<line class="st14" x1="0.1" y1="169.3" x2="200" y2="169.3"/>
+<line class="st15" x1="0.1" y1="169.3" x2="247.3" y2="169.3"/>
 </svg>

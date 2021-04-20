@@ -3,9 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 321 170" style="enable-background:new 0 0 321 170;" xml:space="preserve">
 <style type="text/css">
+@import url("https://use.typekit.net/tfw1zbo.css");
 	.st0{fill:#F4F4F4;}
 	.st1{fill:#241B58;}
-	.st2{font-family:'RealTextPro-Regular';}
+	.st2{font-family:'ff-real-text-pro';}
 	.st3{font-size:6.5px;}
 	.st4{fill:#878787;}
 	.st5{fill:none;stroke:#878787;stroke-width:0.75;}

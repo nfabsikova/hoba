@@ -3,10 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 446.6 432" style="enable-background:new 0 0 446.6 432;" xml:space="preserve">
 <style type="text/css">
+@import url("https://use.typekit.net/tfw1zbo.css");
 	.Coropleth_x0020_map_x0020_outline{fill:none;stroke:#241B58;stroke-width:0.4;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st0{fill:none;stroke:#878787;stroke-width:0.75;}
 	.st1{fill:#878787;}
-	.st2{font-family:'RealTextPro-Regular';}
+	.st2{font-family:'ff-real-text-pro';}
 	.st3{font-size:6.5px;}
 	.st4{fill:none;stroke:#9D9D9B;stroke-width:0.4;}
 	.st5{fill:#F4F4F4;}

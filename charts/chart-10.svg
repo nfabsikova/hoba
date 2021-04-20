@@ -3,11 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 370" style="enable-background:new 0 0 200 370;" xml:space="preserve">
 <style type="text/css">
+@import url("https://use.typekit.net/tfw1zbo.css");
 	.st0{fill:#241B58;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
 	.st1{fill:#7E739E;stroke:#FFFFFF;stroke-width:0.8903;stroke-miterlimit:10;}
 	.st2{fill:#F4F4F4;}
 	.st3{fill:#D9D9D9;}
-	.st4{font-family:'RealTextPro-Regular';}
+	.st4{font-family:'ff-real-text-pro';}
 	.st5{font-size:6.5px;}
 	.st6{fill:#D4D4D4;}
 	.st7{fill:#E2DFEB;}
@@ -15,7 +16,7 @@
 	.st9{fill:none;stroke:#948BB0;stroke-width:0.5233;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#241B58;stroke-width:0.5184;stroke-miterlimit:10;}
 	.st11{fill:#241B58;}
-	.st12{font-family:'RealTextPro-Bold';}
+	.st12{font-family:'ff-real-text-pro';font-weight:700;}
 	.st13{fill:#878787;}
 	.st14{fill:none;stroke:#878787;stroke-width:0.75;}
 	.st15{fill:#FFFFFF;}

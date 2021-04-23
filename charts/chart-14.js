@@ -1,6 +1,7 @@
 export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
 
   // *** CHART SETTINGS ***
+  console.log(grid);
 
   let footnote = "Ohrozenie zrážkami podľa štvorcov 1x1km, Zdroj: Atlas hodnotenia dopadov zmeny klímy na území hlavného mesta SR Bratislavy";
 
@@ -93,6 +94,7 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
             .attr("fill", d => colorScale(d.properties.budovy))
             .attr("stroke", d => colorScale(d.properties.budovy));
 
+
       //Add white background
       chart.append("g")
       .attr("class", "bg")
@@ -128,6 +130,63 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
         .style("fill", "none")
         .style("stroke", colors[0])
         .style("stroke-width", "0.7");
+
+      //Add vulnerable spots
+      function circleCoordinates(grid) {
+        let upLeft = grid.geometry.coordinates[0][0][1];
+        switch (grid.properties.vulnerable) {
+          case 1:
+            let x1 = projection(upLeft)[0] + (rectSide / 2)
+            let y1 = projection(upLeft)[1] + (rectSide / 2)
+            return [[x1, y1]];
+          case 2:
+            let x21 = projection(upLeft)[0] + (rectSide / 2) - 4
+            let y21 = projection(upLeft)[1] + (rectSide / 2)
+            let x22 = projection(upLeft)[0] + (rectSide / 2) + 4
+            let y22 = projection(upLeft)[1] + (rectSide / 2) + 0.6
+            return [[x21, y21], [x22, y22]];
+          case 3:
+            let x31 = projection(upLeft)[0] + (rectSide / 2) - 4
+            let y31 = projection(upLeft)[1] + (rectSide / 2) + 2
+            let x32 = projection(upLeft)[0] + (rectSide / 2) + 4
+            let y32 = projection(upLeft)[1] + (rectSide / 2) + 2.6
+            let x33 = projection(upLeft)[0] + (rectSide / 2) + 0.2
+            let y33 = projection(upLeft)[1] + (rectSide / 2) - 4
+            return [[x31, y31], [x32, y32], [x33, y33]];
+          case 4:
+            let x41 = projection(upLeft)[0] + (rectSide / 2) - 4
+            let y41 = projection(upLeft)[1] + (rectSide / 2) + 2.4
+            let x42 = projection(upLeft)[0] + (rectSide / 2) + 4
+            let y42 = projection(upLeft)[1] + (rectSide / 2) + 3
+            let x43 = projection(upLeft)[0] + (rectSide / 2) - 3.5
+            let y43 = projection(upLeft)[1] + (rectSide / 2) - 4.2
+            let x44 = projection(upLeft)[0] + (rectSide / 2) + 4.6
+            let y44 = projection(upLeft)[1] + (rectSide / 2) - 3.6
+            return [[x41, y41], [x42, y42], [x43, y43], [x44, y44]];
+          default:
+            return [[0, 0]];
+        }
+      }
+      let vulnerablePlaces = chart.append("g")
+            .attr("class", "vulnerable")
+      
+            let vulnerableGrids = grid.features.filter(d => d.properties.vulnerable !== 0);
+            vulnerableGrids.forEach(grid => {
+              console.log(grid.geometry);
+              
+              console.log(grid.properties.vulnerable);
+              console.log(circleCoordinates(grid))
+
+              circleCoordinates(grid).forEach(coordinates => {
+                vulnerablePlaces.append("circle")
+                  .attr("cx", coordinates[0])
+                  .attr("cy", coordinates[1])
+                  .attr("r", 3)
+                  .attr("stroke", "white")
+                  .attr("pointer-events", "none")
+              });
+
+            });
 
         //Add danube
         chart.append("g")

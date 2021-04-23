@@ -339,28 +339,38 @@ export function makeChart4(mc, ba, danube, danubeLine) {
 
       //Add interaction
 
-      //Map highlights
+      //chart interaction
       chart.selectAll("svg").on("mouseover", function(event, d) {
 
           let currentIndex = d[0].index
+          let currentArea = d[0].area
 
           map.selectAll("path." + currentIndex)
               .attr("fill", colors[5])
 
+              chart.selectAll(".rect" + currentIndex)
+              .attr("fill", d => currentArea == "Bratislava" ? colors[1] : colors[5]);
 
       }).on("mouseout", function(event, d) {
 
         let currentIndex = d[0].index
+        let currentArea = d[0].area
 
           map.selectAll("path." + currentIndex)
               .attr("fill", d => colorScale(d.properties.share))
+              
+          chart.selectAll(".rect" + currentIndex)
+              .attr("fill", d => currentArea == "Bratislava" ? colors[1] : colorScale(d[0].share))
 
       })
 
-      //Barchart highlights
+      //map interaction
       map.selectAll("path").on("mouseover", function(event, d) {
 
           let currentIndex = "i" + d.properties.index
+
+          map.selectAll("path." + currentIndex)
+          .attr("fill", colors[5])
           
           chart.selectAll(".rect" + currentIndex)
               .attr("fill", colors[5])
@@ -368,6 +378,9 @@ export function makeChart4(mc, ba, danube, danubeLine) {
       }).on("mouseout", function(event, d) {
 
           let currentIndex = "i" + d.properties.index
+
+          map.selectAll("path." + currentIndex)
+          .attr("fill", d => colorScale(d.properties.share))
 
           chart.selectAll(".rect" + currentIndex)
           .attr("fill", d => colorScale(d[0].share))

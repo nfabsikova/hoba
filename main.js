@@ -28,7 +28,7 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   let danube = danubeData;
   let danubeLine = danubeLineData;
 
-  //Create charts
+  // Create charts
   makeChart1();
   makeChart2();
   makeChart3(mc, ba, danube, danubeLine);

@@ -116,6 +116,9 @@ export function makeChart9(mc, ba, danube, danubeLine) {
             
             let currentIndex = d.properties.index;
 
+            map.selectAll("path.i" + currentIndex)
+            .attr("fill", colors[1]);
+
             bars.selectAll("rect.i" + currentIndex)
                 .attr("fill", colors[1])
             
@@ -124,6 +127,8 @@ export function makeChart9(mc, ba, danube, danubeLine) {
             let currentIndex = d.properties.index;
             let currentIncome = d.properties.income;
 
+          map.selectAll("path.i" + currentIndex)
+            .attr("fill", colorScale(currentIncome));
 
             bars.selectAll("rect.i" + currentIndex)
                 .attr("fill", colorScale(currentIncome))
@@ -253,14 +258,21 @@ export function makeChart9(mc, ba, danube, danubeLine) {
         bgRects.selectAll("rect").on("mouseover", function(event, d) {
 
           let currentIndex = d.index
+
+          bars.selectAll("rect." + currentIndex)
+          .attr("fill", d.area === 'Bratislava' ? colors[3] : colors[1])
           
           map.selectAll("path." + currentIndex)
             .attr("fill", colors[1]);
+
 
         }).on("mouseout", function(event, d){
 
           let currentIndex = d.index;
           let currentIncome = d.income;
+
+          bars.selectAll("rect." + currentIndex)
+          .attr("fill", d.area === 'Bratislava' ? colors[3] : colorScale(currentIncome))
 
           map.selectAll("path." + currentIndex)
             .attr("fill", colorScale(currentIncome));

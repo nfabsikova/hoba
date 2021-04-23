@@ -294,6 +294,9 @@ export function makeChart6() {
               
               let currentIndex = d.IDN4
 
+              bars.selectAll("rect.i" + currentIndex)
+              .attr("fill", colors[1])
+
               map.selectAll("path.i" + currentIndex)
                   .attr("fill", colors[1])
 
@@ -301,6 +304,10 @@ export function makeChart6() {
 
               let currentIndex = d.IDN4
               let currentFlow = d.flow
+              console.log(currentIndex);
+
+              bars.selectAll("rect.i" + currentIndex)
+              .attr("fill", colorScale(currentFlow))
 
               map.selectAll("path.i" + currentIndex)
                   .attr("fill", colorScale(currentFlow))

@@ -19,10 +19,11 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
               .range(["#ffffff", "#e0dfeb", "#d5d1df", "#7e739e", "#52467d", "#282254"]);
 
   //Define legend keys and position
-  let lgKeys = ["1–10 / km²", "10–40 / km²", "40–70 / km²", "70–100 / km²", "viac ako 100 budov / km²"].reverse();
+  let lg1Keys = ["1–10 / km²", "10–40 / km²", "40–70 / km²", "70–100 / km²", "viac ako 100 budov / km²"].reverse();
+  let lg2Keys = ["1 / km²", "2 / km²", "3 / km²", "4 / km²"].reverse();
   let lgColors = ["#e0dfeb", "#d5d1df", "#7e739e", "#52467d", "#282254"].reverse();
-  let lgTop = height * 0.6;
-  let lgLeft = width * 0.12;
+  let lgTop = height * 0.45;
+  let lgLeft = width * 0.08;
   let lgHeight = 25;
 
   // *** END OF SETTINGS ***
@@ -172,10 +173,6 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
       
             let vulnerableGrids = grid.features.filter(d => d.properties.vulnerable !== 0);
             vulnerableGrids.forEach(grid => {
-              console.log(grid.geometry);
-              
-              console.log(grid.properties.vulnerable);
-              console.log(circleCoordinates(grid))
 
               circleCoordinates(grid).forEach(coordinates => {
                 vulnerablePlaces.append("circle")
@@ -213,10 +210,10 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
         .style("stroke-width", "1.2");
 
         //Add legend
-        let legend = chart.append("g")
+        let legend1 = chart.append("g")
           .attr("class", "legend")
 
-        legend.append("text")
+        legend1.append("text")
           .attr("x", lgLeft)
           .attr("y", lgTop - 5)
             .style("font-size", "12px")
@@ -229,8 +226,8 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
               .attr("x", lgLeft)
               .attr("dy", 16)
 
-        legend.selectAll("legendRects")
-        .data(lgKeys)
+        legend1.selectAll("legendRects")
+        .data(lg1Keys)
         .enter()
         .append("rect")
             .attr("x", lgLeft)
@@ -242,8 +239,8 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
             .style("fill", (d,i) => lgColors[i])
             .attr("pointer-events", "none");
 
-        legend.selectAll("legendText")
-        .data(lgKeys)
+        legend1.selectAll("legendText")
+        .data(lg1Keys)
         .enter()
         .append("text")
             .attr("class", "numbers")
@@ -253,6 +250,70 @@ export function makeChart14(mc, ba, grid, gridBg, danube, danubeLine) {
             .style("font-size", "12px")
             .attr("pointer-events", "none")
             .style("alignment-baseline", "hanging"); 
+
+
+        let legend2 = chart.append("g")
+            .attr("class", "legend")
+  
+          legend2.append("text")
+            .attr("x", lgLeft)
+            .attr("y", lgTop + 180)
+              .style("font-size", "12px")
+              .style("alignment-baseline", "hanging")
+              .style("fill", "#878787")
+            .append("tspan")
+                .text("Počet zariadení pre")
+            .append("tspan")
+                .text("seniorov, detských domovov")
+                .attr("x", lgLeft)
+                .attr("dy", 16)
+            .append("tspan")
+                .text("a nemocničných zariadení")
+                .attr("x", lgLeft)
+                .attr("dy", 16)
+
+          let lg2RectsSelection = legend2.selectAll("legendRects")
+          .data(lg2Keys)
+          .enter()
+          .append("rect")
+              .attr("x", lgLeft)
+              .attr("y", (d,i) => lgTop + (i+1)*lgHeight + 210) 
+              .attr("width", 14)
+              .attr("height", 14)
+              .attr("rx", 1.5)
+              .attr("ry", 1.5)
+              .style("fill", "white")
+              .style("stroke", "white")
+              .attr("pointer-events", "none");
+
+          let lg2Rects = lg2RectsSelection._groups[0];
+
+          //build legend 2 circles 
+          legend2.append("circle").attr("cx", Number(lg2Rects[0].getAttribute("x")) + 3).attr("cy", Number(lg2Rects[0].getAttribute("y")) + 3).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[0].getAttribute("x")) + 11).attr("cy", Number(lg2Rects[0].getAttribute("y")) + 3).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[0].getAttribute("x")) + 3).attr("cy", Number(lg2Rects[0].getAttribute("y")) + 11).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[0].getAttribute("x")) + 11).attr("cy", Number(lg2Rects[0].getAttribute("y")) + 11).attr("r", 3)
+
+          legend2.append("circle").attr("cx", Number(lg2Rects[1].getAttribute("x")) + 7).attr("cy", Number(lg2Rects[1].getAttribute("y")) + 3).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[1].getAttribute("x")) + 3).attr("cy", Number(lg2Rects[1].getAttribute("y")) + 11).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[1].getAttribute("x")) + 11).attr("cy", Number(lg2Rects[1].getAttribute("y")) + 11).attr("r", 3)
+
+          legend2.append("circle").attr("cx", Number(lg2Rects[2].getAttribute("x")) + 3).attr("cy", Number(lg2Rects[2].getAttribute("y")) + 7).attr("r", 3)
+          legend2.append("circle").attr("cx", Number(lg2Rects[2].getAttribute("x")) + 11).attr("cy", Number(lg2Rects[2].getAttribute("y")) + 7).attr("r", 3)
+
+          legend2.append("circle").attr("cx", Number(lg2Rects[3].getAttribute("x")) + 7).attr("cy", Number(lg2Rects[3].getAttribute("y")) + 7).attr("r", 3)
+
+          legend2.selectAll("legendText")
+              .data(lg2Keys)
+              .enter()
+              .append("text")
+                  .attr("class", "numbers")
+                  .attr("x", lgLeft + 25)
+                  .attr("y", (d,i) => lgTop + (i+1)*lgHeight + 212) 
+                  .text(d => d)
+                  .style("font-size", "12px")
+                  .attr("pointer-events", "none")
+                  .style("alignment-baseline", "hanging"); 
 
 
         //Add interactivity

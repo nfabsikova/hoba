@@ -29,19 +29,19 @@ function makeCharts([mcData, baData, gridData, gridBgData, danubeData, danubeLin
   let danubeLine = danubeLineData;
 
   // Create charts
-  // makeChart1();
-  // makeChart2();
-  // makeChart3(mc, ba, danube, danubeLine);
-  // makeChart4(mc, ba, danube, danubeLine);
-  // makeChart5();
-  // makeChart6();
-  // makeStaticChart(7, 800);
-  // makeStaticChart(8, 600);
-  // makeChart9(mc, ba, danube, danubeLine);
-  // makeChart10();
-  // makeChart11();
-  // makeStaticChart(12, 500);
-  // makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
+  makeChart1();
+  makeChart2();
+  makeChart3(mc, ba, danube, danubeLine);
+  makeChart4(mc, ba, danube, danubeLine);
+  makeChart5();
+  makeChart6();
+  makeStaticChart(7, 800);
+  makeStaticChart(8, 600);
+  makeChart9(mc, ba, danube, danubeLine);
+  makeChart10();
+  makeChart11();
+  makeStaticChart(12, 500);
+  makeChart13(mc, ba, grid, gridBg, danube, danubeLine);
   makeChart14(mc, ba, grid, gridBg, danube, danubeLine);
 }
 

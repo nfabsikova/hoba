@@ -1,6 +1,6 @@
 export function makeChart5() {
 
-  let headline = "Skoro tretina SIM kariet prítomných v Braslave počas dňa prichádza spoza hraníc mesta.";
+  let headline = "Skoro tretina SIM kariet prítomných v Bratislave počas dňa prichádza spoza hraníc mesta.";
 
   // Create all chart sections
 
@@ -29,8 +29,8 @@ export function makeChart11() {
   let headline = "V ostatných desiatich rokoch si Staré Mesto v porovnaní s ostatnými mestskými časťami vedie stále lepšie";
 
   //Create headline
-  d3.select("#chart10").append("hr").attr("class", "headline");
-  d3.select("#chart10").append("h3").text(headline);
+  d3.select("#chart11").append("hr").attr("class", "headline");
+  d3.select("#chart11").append("h3").text(headline);
 
   //Append svg
   makeStaticChart(11, 800);
